@@ -1,0 +1,761 @@
+---
+title: "Learn to Code and </br>Excel in Your Scientific Endeavors"
+subtitle: "Cultivate capabilities in neuro-data analytics and</br> high-performance statistical computing"
+author: "Ryan Mears"
+format: 
+  revealjs:
+    slide-number: true
+    footnotes-hover: true
+editor: visual
+---
+
+# Why Code? 
+
+
+::: r-fit-text
+> Your closest\
+> collaborator is\
+> you six months ago\
+> but you don't reply to email.
+:::
+
+-   
+
+    ### **Karl Broman**
+
+## Reasons to Learn to Code
+
+-   Adaptability
+
+-   Flexibility
+
+-   Integration
+
+-   Repeatability
+
+-   Reusability
+
+-   Sharability
+
+
+## Code, How?
+
+::: incremental
+-   *Adapt* example code directly from online documentation
+-   *Flexibly* accommodate new datatypes & formats
+-   *Integrate* extensive additional code libraries & solutions from others
+-   *Repeat* analysis with additional data or with changes to initial steps for reanalyzing the same data
+-   *Reuse* with minor modifications for similar data
+-   *Share* with others so they can modify, repeat, reuse, and build on code
+:::
+
+------------------------------------------------------------------------
+
+## Return on Investment
+
+| Advantages                      | Limitations                         |
+|---------------------------------|-------------------------------------|
+| High Customization              | Increased User Knowledge Dependence |
+| High Composability              | Reduced Usability                   |
+| Graphical Resource Independence | Explicit Command Requirement        |
+| Integration & Modularity        |                                     |
+| Utility of Scale                |                                     |
+| Searchability                   |                                     |
+
+------------------------------------------------------------------------
+
+
+# Statistics, Data Science, & Machine Learning
+
+## Statistics Curricula {.smaller}
+
+::: columns
+:::: {.column width="30%"}
+
+**Programming** 
+
+  - Structured 
+  - Efficiency 
+  - HPC 
+
+**Data Formats** 
+
+  - Ragged arrays 
+  - Text data 
+  - Data cleaning 
+  
+::::
+:::: {.column width="30%"}
+
+**Data Tech**  
+
+  - RDBMS (SQL) 
+  - RegEx 
+  - XML 
+  - Shell commands 
+  - Web scraping 
+	
+
+  
+::::
+:::: {.column width="30%"}
+
+
+  
+**Work Flow**
+
+  - Reproducibility 
+  - Web publishing 
+  - Revision control 
+	 
+**Statistical**	
+
+  - Simulations 
+  - Modern methods 
+  - Visualization 
+  
+*From Hardin et al.,2015,*^[Hardin, J., Hoerl, R., Horton, N. J., Nolan, D., Baumer, B., Hall-Holt, O., ... & Ward, M. (2015). Data science in statistics curricula: Preparing students to “think with data”. The American Statistician, 69(4), 343-353. [http://dx.doi.org/10.1080/00031305.2015.1077729](http://dx.doi.org/10.1080/00031305.2015.1077729)]
+::::
+:::
+
+
+
+## Data Science Activities {.smaller}
+
+::: columns
+:::: {.column width="50%"}
+
+1. Data Gathering, Preparation, and Exploration
+2. Data Representation and Transformation
+3. Computing with Data
+4. Data Modeling
+5. Data Visualization and Presentation
+6. Science about Data Science
+
+
+
+*From Donoho, 2017.*^[Donoho, D. (2017). 50 years of data science. Journal of</br> Computational  and  Graphical Statistics, 26(4), 745-766.</br>  [https://doi.org/10.1080/10618600.2017.1384734](https://doi.org/10.1080/10618600.2017.1384734)]
+
+
+
+::::
+:::: {.column width="50%"}
+
+Ismay, C., & Kim, A. Y. (2019). Statistical inference via data science: a ModernDive into R and the tidyverse. Chapman and Hall/CRC. [https://moderndive.com/](https://moderndive.com/)
+
+Navarro, D. (2015). Learning statistics with R: A tutorial for psychology students and other beginners (version 0.6). University of New South Wales. [https://learningstatisticswithr.com/](https://learningstatisticswithr.com/)
+
+Donoghue T, Voytek B, & Ellis S (2022). Course Materials for Data Science in 
+Practice. Journal of Open Source Education, 5(51), 121. [https://doi.org/10.21105/jose.00121](https://doi.org/10.21105/jose.00121)
+
+::::
+:::
+
+## Tabular Data & Data Frames
+
+## Data Transfromation & Manipulation
+
+# Tidyverse R
+
+```{latex}
+                                          .---> Communicate
+read -> wrangle ---.--> transform ---+-- /
+                   ^                 |            
+                   |                 v
+                   model <-- visualize 
+                   
+```
+
+## Tidyverse Concepts
+
+![](tidydata_1.jpg)
+
+## Tidyverse Concepts
+
+![](tidydata_2.jpg)
+
+## Tidyverse Concepts
+
+![](tidydata_3.jpg)
+
+
+# Processing Pipelines & Scientific Workflows
+
+## Conventional Data Processing 
+
+## Unsupervised/Supervised Machine Learning
+
+
+
+# Open Science Approaches to Scientific Transparency Presents Advantages for Research Training
+
+## Open Science {.smaller}
+
+![](RR-Open2021.jpg){width=80%}
+
+Garrett-Rufin, et al, 2021^[Garrett-Ruffin, S., Hindash, A. C., Kaczkurkin, A. N., Mears, R. P., Morales, S., Paul, K., ... & Keil, A. (2021). Open science in psychophysiology: An overview of challenges and emerging solutions. International Journal of Psychophysiology, 162, 69-78.]
+
+:::{.notes}
+Fig. 1. Open science practices affect the research process at multiple levels.
+
+The process of experimental research, involving steps ranging from hypothesis generation to drawing conclusions, is positively affected by various open science practices such as pre-registration and multi-laboratory studies. Direct replication requires sequential repetition of measurements and treatments. In a multisite study, identical measurements and treatments are carried out simultaneously between multiple similar experiment settings. Replicability in a multisite study thus supports the robustness of study outcomes. In this context, Computational Reproducibility addresses *Researcher Degrees of Freedom by constraining the influences of user defined parameters, code, and computing environment on analysis outcome. Likewise, preregistration precludes questionable research practices such as HARKing (hypothesizing after the results are known) by eliminating the possibility of outcome-dependent decision making.
+:::
+
+
+
+## Computational Reproducibility {.smaller}
+
+::: columns
+:::: {.column width="50%"}
+
+::: {style="display: flex;"}
+<div>
+
+Specificity
+
+```{mermaid, echo=FALSE, warning=FALSE, message=FALSE, fig.width=1.5, fig.height=12}
+
+graph TD;
+    A[coarse] -----> B[granular]
+
+
+```
+
+</div>
+
+::: {.middle style="text-align: center"}
+```{mermaid, echo=FALSE, warning=FALSE, message=FALSE, fig.width=9, fig.height=2}
+
+
+graph LR;
+    A[Abstract] ---> |Representativeness </br> </br> </tab> | B[Concrete]
+
+
+```
+
++-----------------------------------+---------------------------------+
+| #### **Computing Environment**    | #### **Workflow** / </br> **Pipeline**                                                        |
++-----------------------------------+---------------------------------+
+| #### **Raw Data** </br> & Code    | ##### **Analysis Derivatives**</br>-*derived variables*</br>-*stats/figures*      
++-----------------------------------+---------------------------------+
+
+: {.table .table-bordered .text-white .border .border-white .rounded-3 tbl-colwidths="[50,50]"}
+:::
+:::
+
+
+
+
+::::
+:::: {.column width="50%"}
+
+### [Computing Environment]{style="color: red;"}
+
+-   [ ] learn how computing works (computing abstractions, operating systems graphics hardware, applications/software, filesystems, etc.)
+-   [ ] learn shell scripting for generalizing tasks across hardware/operating systems
+
+
+
+
+
+::::
+:::
+
+
+## Computational Reproducibility {.smaller}
+
+::: columns
+:::: {.column width="50%"}
+
+::: {style="display: flex;"}
+<div>
+
+Specificity
+
+```{mermaid, echo=FALSE, warning=FALSE, message=FALSE, fig.width=1.5, fig.height=12}
+
+graph TD;
+    A[coarse] -----> B[granular]
+
+
+```
+
+</div>
+
+::: {.middle style="text-align: center"}
+```{mermaid, echo=FALSE, warning=FALSE, message=FALSE, fig.width=9, fig.height=2}
+
+
+graph LR;
+    A[Abstract] ---> |Representativeness </br> </br> </tab> | B[Concrete]
+
+
+```
+
++-----------------------------------+---------------------------------+
+| #### **Computing Environment**    | #### **Workflow** / </br> **Pipeline**                                                        |
++-----------------------------------+---------------------------------+
+| #### **Raw Data** </br> & Code    | ##### **Analysis Derivatives**</br>-*derived variables*</br>-*stats/figures*      
++-----------------------------------+---------------------------------+
+
+: {.table .table-bordered .text-white .border .border-white .rounded-3 tbl-colwidths="[50,50]"}
+:::
+:::
+
+
+
+
+::::
+:::: {.column width="50%"}
+
+
+### [Workflow/Pipeline]{style="color: red;"}
+
+-   [ ] reproducibility/open science
+
+
+
+::::
+:::
+
+
+
+
+## Computational Reproducibility {.smaller}
+
+::: columns
+:::: {.column width="50%"}
+
+::: {style="display: flex;"}
+<div>
+
+Specificity
+
+```{mermaid, echo=FALSE, warning=FALSE, message=FALSE, fig.width=1.5, fig.height=12}
+
+graph TD;
+    A[coarse] -----> B[granular]
+
+
+```
+
+</div>
+
+::: {.middle style="text-align: center"}
+```{mermaid, echo=FALSE, warning=FALSE, message=FALSE, fig.width=9, fig.height=2}
+
+
+graph LR;
+    A[Abstract] ---> |Representativeness </br> </br> </tab> | B[Concrete]
+
+
+```
+
++-----------------------------------+---------------------------------+
+| #### **Computing Environment**    | #### **Workflow** / </br> **Pipeline**                                                        |
++-----------------------------------+---------------------------------+
+| #### **Raw Data** </br> & Code    | ##### **Analysis Derivatives**</br>-*derived variables*</br>-*stats/figures*      
++-----------------------------------+---------------------------------+
+
+: {.table .table-bordered .text-white .border .border-white .rounded-3 tbl-colwidths="[50,50]"}
+:::
+:::
+
+
+
+
+
+::::
+:::: {.column width="50%"}
+
+### [Raw data / code]{style="color: red;"}
+
+-   [ ] learn how to use this
+-   [ ] dataframe concepts
+
+::::
+:::
+
+
+
+
+
+## Computational Reproducibility {.smaller}
+
+::: columns
+:::: {.column width="50%"}
+
+::: {style="display: flex;"}
+<div>
+
+Specificity
+
+```{mermaid, echo=FALSE, warning=FALSE, message=FALSE, fig.width=1.5, fig.height=12}
+
+graph TD;
+    A[coarse] -----> B[granular]
+
+
+```
+
+</div>
+
+::: {.middle style="text-align: center"}
+```{mermaid, echo=FALSE, warning=FALSE, message=FALSE, fig.width=9, fig.height=2}
+
+
+graph LR;
+    A[Abstract] ---> |Representativeness </br> </br> </tab> | B[Concrete]
+
+
+```
+
++-----------------------------------+---------------------------------+
+| #### **Computing Environment**    | #### **Workflow** / </br> **Pipeline**                                                       |
++-----------------------------------+---------------------------------+
+| #### **Raw Data** </br> & Code    | ##### **Analysis Derivatives**</br>-*derived variables*</br>-*stats/figures*      
++-----------------------------------+---------------------------------+
+
+: {.table .table-bordered .text-white .border .border-white .rounded-3 tbl-colwidths="[50,50]"}
+:::
+:::
+
+
+
+
+
+::::
+:::: {.column width="50%"}
+
+
+### [Derivatives]{style="color: red;"}
+
+-   [ ] data wrangling in Python/R
+-   [ ] learn how to graph in Python/R
+-   [ ] implementation of intermediate steps
+-   [ ] inferential statistics
+
+
+::::
+:::
+
+
+## Workflow {.smaller}
+
+##### SPSS & Microsoft Office Workflow
+
+```{mermaid, echo=FALSE, warning=FALSE, message=FALSE, fig.width=12, fig.height=2}
+
+%%{init: {'theme':'forest'}}%%
+
+graph LR
+    A[Raw Data] --> B(Excel)
+    B -->|Process and </tab> </br> </br> </tab> Analyze| C(SPSS)
+    C -->|Present| D(PowerPoint)
+    C -->|Document| E(Word)
+    
+
+    classDef green fill:#9f6,stroke:#333,stroke-width:0.5px;
+    classDef orange fill:#f96,stroke:#333,stroke-width:1px;
+    classDef white fill:#fff,stroke:#333,stroke-width:1px; 
+    classDef blue fill:#6699cc,stroke:#333,stroke-width:1px;
+    classDef red fill:#D32737,stroke:#FFF,stroke-width:1.5px;
+    classDef purple fill:#6A2A60,stroke:#FFF,stroke-width:1.5px;
+    classDef royalblue fill:#0021A5,stroke:#FFF,stroke-width:1.5px;
+    
+    class B,C green
+    class A red
+    class E royalblue
+    class D purple
+    
+    
+    %%style A fill:#f9f,stroke:#333,stroke-width:2px
+    %%style B fill:#bbf,stroke:#333,stroke-width:2px
+    %%style C fill:#fbf,stroke:#333,stroke-width:2px
+    %%style D fill:#bfb,stroke:#333,stroke-width:2px
+    %%style E fill:#ffb,stroke:#333,stroke-width:2px
+    
+```
+
+
+
+
+## Workflow {.smaller}
+
+##### SPSS & Microsoft Office Workflow
+
+```{mermaid, echo=FALSE, warning=FALSE, message=FALSE, fig.width=12, fig.height=2}
+
+%%{init: {'theme':'forest'}}%%
+
+graph LR
+    A[Raw Data] --> B(Excel)
+    B -->|Process and </tab> </br> </br> </tab> Analyze| C(SPSS)
+    C -->|Present| D(PowerPoint)
+    C -->|Document| E(Word)
+    
+
+    classDef green fill:#9f6,stroke:#333,stroke-width:0.5px;
+    classDef orange fill:#f96,stroke:#333,stroke-width:1px;
+    classDef white fill:#fff,stroke:#333,stroke-width:1px; 
+    classDef blue fill:#6699cc,stroke:#333,stroke-width:1px;
+    classDef red fill:#D32737,stroke:#FFF,stroke-width:1.5px;
+    classDef purple fill:#6A2A60,stroke:#FFF,stroke-width:1.5px;
+    classDef royalblue fill:#0021A5,stroke:#FFF,stroke-width:1.5px;
+    
+    class B,C green
+    class A red
+    class E royalblue
+    class D purple
+    
+    
+    %%style A fill:#f9f,stroke:#333,stroke-width:2px
+    %%style B fill:#bbf,stroke:#333,stroke-width:2px
+    %%style C fill:#fbf,stroke:#333,stroke-width:2px
+    %%style D fill:#bfb,stroke:#333,stroke-width:2px
+    %%style E fill:#ffb,stroke:#333,stroke-width:2px
+    
+```
+
+
+
+##### Hybrid Workflow in Python (i.e., Jupyter Notebook)
+
+```{mermaid, echo=FALSE, warning=FALSE, message=FALSE, fig.width=12, fig.height=2}
+
+%%{init: {'theme':'forest'}}%%
+
+graph LR
+    A[Raw Data] --> B(Jupyter Notebook)
+    B -->|Process and </tab> </br> </br> </tab> Analyze| C(Jupyter Notebook)
+    C -->|Present| D(PowerPoint)
+    C -->|Document| E(Word)
+    
+
+    classDef green fill:#9f6,stroke:#333,stroke-width:0.5px;
+    classDef orange fill:#f96,stroke:#333,stroke-width:1px;
+    classDef white fill:#fff,stroke:#333,stroke-width:1px; 
+    classDef blue fill:#6699cc,stroke:#333,stroke-width:1px;
+    classDef red fill:#D32737,stroke:#FFF,stroke-width:1.5px;
+    classDef purple fill:#6A2A60,stroke:#FFF,stroke-width:1.5px;
+    classDef royalblue fill:#0021A5,stroke:#FFF,stroke-width:1.5px;
+    
+    class B,C green
+    class A red
+    class E royalblue
+    class D purple
+    
+    
+    %%style A fill:#f9f,stroke:#333,stroke-width:2px
+    %%style B fill:#bbf,stroke:#333,stroke-width:2px
+    %%style C fill:#fbf,stroke:#333,stroke-width:2px
+    %%style D fill:#bfb,stroke:#333,stroke-width:2px
+    %%style E fill:#ffb,stroke:#333,stroke-width:2px
+    
+```
+
+
+##### Hybrid Workflow in Matlab (livescript)
+
+```{mermaid, echo=FALSE, warning=FALSE, message=FALSE, fig.width=12, fig.height=2}
+
+%%{init: {'theme':'forest'}}%%
+
+graph LR
+    A[Raw Data] --> B(Jupyter Notebook)
+    B -->|Process and </tab> </br> </br> </tab> Analyze| C(Jupyter Notebook)
+    C -->|Present| D(PowerPoint)
+    C -->|Document| E(Word)
+    
+
+    classDef green fill:#9f6,stroke:#333,stroke-width:0.5px;
+    classDef orange fill:#f96,stroke:#333,stroke-width:1px;
+    classDef white fill:#fff,stroke:#333,stroke-width:1px; 
+    classDef blue fill:#6699cc,stroke:#333,stroke-width:1px;
+    classDef red fill:#D32737,stroke:#FFF,stroke-width:1.5px;
+    classDef purple fill:#6A2A60,stroke:#FFF,stroke-width:1.5px;
+    classDef royalblue fill:#0021A5,stroke:#FFF,stroke-width:1.5px;
+    
+    class B,C green
+    class A red
+    class E royalblue
+    class D purple
+    
+    
+    %%style A fill:#f9f,stroke:#333,stroke-width:2px
+    %%style B fill:#bbf,stroke:#333,stroke-width:2px
+    %%style C fill:#fbf,stroke:#333,stroke-width:2px
+    %%style D fill:#bfb,stroke:#333,stroke-width:2px
+    %%style E fill:#ffb,stroke:#333,stroke-width:2px
+    
+```
+
+::: {.fragment .fade-in}
+
+##### R & RStudio Workflow
+
+```{mermaid, echo=FALSE, warning=FALSE, message=FALSE, fig.width=12, fig.height=2}
+
+%%{init: {'theme':'forest'}}%%
+
+graph LR
+    A[Raw Data] --> B(RStudio)
+    B -->|Process and </tab> </br> </br> </tab> Analyze| C(RStudio)
+    C -->|Present and </tab> </br> </br> </tab> Document| D(RStudio)
+    
+
+    classDef green fill:#9f6,stroke:#333,stroke-width:0.5px;
+    classDef orange fill:#f96,stroke:#333,stroke-width:1px;
+    classDef white fill:#fff,stroke:#333,stroke-width:1px; 
+    classDef blue fill:#6699cc,stroke:#333,stroke-width:1px;
+    classDef red fill:#D32737,stroke:#FFF,stroke-width:1.5px;
+    classDef purple fill:#6A2A60,stroke:#FFF,stroke-width:1.5px;
+    classDef royalblue fill:#0021A5,stroke:#FFF,stroke-width:1.5px;
+    
+    class B,C green
+    class A red
+    class D royalblue
+
+    
+    %%style A fill:#f9f,stroke:#333,stroke-width:2px
+    %%style B fill:#bbf,stroke:#333,stroke-width:2px
+    %%style C fill:#fbf,stroke:#333,stroke-width:2px
+    %%style D fill:#bfb,stroke:#333,stroke-width:2px
+    %%style E fill:#ffb,stroke:#333,stroke-width:2px
+    
+```
+
+:::
+
+## Analyze Behavior  {.smaller}
+
+
+
+```{mermaid, echo=FALSE, warning=FALSE, message=FALSE, fig.width=12, fig.height=3}
+
+%%{init: {'theme':'forest'}}%%
+graph LR
+
+    subgraph Analysis
+       s6 -->  s7{Inferential Stats}
+    end
+ 
+    subgraph ETHZ-INS/DLCAnalyzer
+        s3 --> s4[Data Wrangling</br> Graphing]
+        s5 --> s6[Data Wrangling]
+        s6 --> s4
+        
+        subgraph dlca[Derivative Variables </br> Data Visualizations]
+          s4 --> s5[unsupervised</br> classification</br> and clustering]
+        end
+    end
+
+    subgraph DeepLabCut
+
+        subgraph Training
+            s1[add keypoints]-->s2[run training]
+            s2 --> s2a[analyze</br> training]
+            s2a -->s2
+
+        end
+
+        subgraph Decoding
+            s2a --> s3a[add</br> videos] 
+            
+        end
+        
+         
+        s3a --> s3[import data</br>transform]
+       
+    end
+    
+    subgraph Read-in-Data[Raw Data]
+        s0[import video] --> s1
+    end
+    
+ %% Notice that no text in shape are added here instead that is appended further down
+    
+
+    %% Comments after double percent signs
+
+     classDef green fill:#9f6,stroke:#333,stroke-width:0.5px;
+     classDef orange fill:#f96,stroke:#333,stroke-width:1px;
+     classDef white fill:#fff,stroke:#333,stroke-width:1px;
+     classDef sq stroke:#f66,stroke-width:1px;
+     classDef blue fill:#6699cc,stroke:#333,stroke-width:1px;
+     classDef red fill:#D32737,stroke:#FFF,stroke-width:1.5px;
+     class sq,Analysis green
+     class ETHZ-INS/DLCAnalyzer orange
+     class Training,dlca,s0 white
+     class DeepLabCut white
+     class Decoding blue
+     class Read-in-Data red
+     
+```
+
+
+##
+
+::: columns
+:::: {.column width="50%"}
+
+::::
+:::: {.column width="50%"}
+
+::::
+:::
+
+
+
+# How to Develop Coding Capabilities
+
+## Start & Practice
+
+## UFRC Courses & Community Workshops
+
+## Books, Online Courses, Tutorials
+
+Grisham, W., Abrams, M., Babiec, W. E., Fairhall, A. L., Kass, R. E., Wallisch, P., & Olivo, R. (2021). Teaching Computation in Neuroscience: Notes on the 2019 Society for Neuroscience Professional Development Workshop on Teaching. Journal of undergraduate neuroscience education : JUNE : a publication of FUN, Faculty for Undergraduate Neuroscience, 19(2), A185–A191. https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8437361
+
+## ChatGPT and Github Copilot{.smaller}
+
+:::{.aside}
+
+Gurdil, H., Soguksu, Y. B., Salihoglu, S., & Coskun, F. (2024). Integrating AI in Educational Measurement: ChatGPT's Efficacy in Item Response Theory Data Generation. arXiv preprint arXiv:2402.01731. https://doi.org/10.48550/arXiv.2402.01731
+
+
+
+Kashefi, A., & Mukerji, T. (2023). ChatGPT for programming numerical methods. Journal of Machine Learning for Modeling and Computing, 4(2). https://doi.org/10.1615/JMachLearnModelComput.2023048492
+
+Kim, D., Kim, T., Kim, Y., Byun, Y. H., & Yun, T. S. (2024). A ChatGPT-MATLAB framework for numerical modeling in geotechnical engineering applications. Computers and Geotechnics, 169, 106237. https://doi.org/10.1016/j.compgeo.2024.106237
+
+Kosar, T., Ostojić, D., Liu, Y. D., & Mernik, M. (2024). Computer Science Education in ChatGPT Era: Experiences from an Experiment in a Programming Course for Novice Programmers. Mathematics, 12(5), 629. https://doi.org/10.3390/math12050629
+
+Rahman, C. R., & Wong, L. (2023). How much can ChatGPT really help Computational Biologists in Programming?. arXiv preprint arXiv:2309.09126. https://doi.org/10.48550/arXiv.2309.09126
+
+Sänger, M., De Mecquenem, N., Lewińska, K. E., Bountris, V., Lehmann, F., Leser, U., & Kosch, T. (2023). Large Language Models to the Rescue: Reducing the Complexity in Scientific Workflow Development Using ChatGPT. arXiv preprint arXiv:2311.01825. https://doi.org/10.48550/arXiv.2311.01825
+
+Shen, Y., Ai, X., Soosai Raj, A. G., Leo John, R. J., & Syamkumar, M. (2024, March). Implications of ChatGPT for Data Science Education. In Proceedings of the 55th ACM Technical Symposium on Computer Science Education, 1, 1230-1236. https://doi.org/10.1145/3626252.3630874
+
+Silva, C. A. G. D., Ramos, F. N., de Moraes, R. V., & Santos, E. L. D. (2024). ChatGPT: Challenges and Benefits in Software Programming for Higher Education. Sustainability, 16(3), 1245.
+https://doi.org/10.3390/su16031245
+
+Waseem, M., Das, T., Ahmad, A., Fehmideh, M., Liang, P., & Mikkonen, T. (2023). Using ChatGPT throughout the Software Development Life Cycle by Novice Developers. arXiv preprint.
+https://doi.org/10.48550/arXiv.2310.13648
+
+White, J., Hays, S., Fu, Q., Spencer-Smith, J., & Schmidt, D. C. (2023). Chatgpt prompt patterns for improving code quality, refactoring, requirements elicitation, and software design. arXiv preprint. https://doi.org/10.48550/arXiv.2303.07839 
+
+:::
+
+## Code Review & Pair Programming
+
+## Hackathons & Competitions
+
+## Collaborate
+
+## Share & Teach
+
+
+
+
+
