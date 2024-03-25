@@ -64,6 +64,65 @@ editor: visual
 
 ------------------------------------------------------------------------
 
+## Code Libraries & APIs {.smaller}
+
+-   **Code Libraries**: collections of pre-written code that can be used to perform tasks.
+- **APIs** (Application Programming Interfaces): rules & protocols allowing users or other applications to interact with a software application.
+
+::: columns
+
+
+:::: {.column width="50%"}
+
+#### GUI (Graphical User Interface)
+
+- Intuitiveness and Accessibility
+- Limited to Pre-defined Options
+- Event-Driven Programming
+
+
+::::
+
+:::: {.column width="50%}
+
+#### CLI (Command Line Interface)
+
+- Flexibility and Control
+- Scripting and Automation
+- Steep Learning Curve
+- Efficiency for Experienced Users
+
+::::
+:::
+
+
+
+
+:::{.notes}
+
+Ways in which users or computers interact with APIs can vary significantly between GUIs and CLIs, reflecting differences in usability, flexibility, and the type of user experience they are designed to offer.
+
+GUI
+
+1. **Intuitiveness and Accessibility:** 
+GUIs are designed to be intuitive and accessible to users, offering graphical elements such as buttons, icons, and menus to interact with. The API in the context of a GUI might be more about how these elements are programmed to interact with the software's logic and data. Users don't usually interact with the API directly but through these graphical elements.
+
+2. **Limited to Pre-defined Options:** GUIs often limit the user to predefined operations or workflows designed by the application developers. The API interactions are therefore constrained by what the GUI offers, making it potentially less flexible but simpler for non-technical users.
+
+3. **Event-Driven Programming:** GUI APIs are heavily reliant on event-driven programming, where code execution is triggered by user actions like clicks, drags, and drops. This model affects how APIs are structured and utilized in GUI applications, focusing on responsiveness and user interaction feedback.
+
+
+CLI
+
+1. **Flexibility and Control:** CLI provides a more direct and text-based way to interact with software, offering greater flexibility and control to the user. Users can combine commands in scripts, automate tasks, and utilize the full breadth of the API's capabilities. This makes CLIs particularly favored by developers and system administrators.
+
+2. **Scripting and Automation:** CLI allows for scripting and automation. Users can write scripts that directly call an application's API functions, enabling complex workflows and batch processing. This aspect is less inherent in GUIs, which are more designed for interactive use.
+
+3. **Steep Learning Curve:** The increased power and flexibility of CLIs come with a steeper learning curve. Users must be familiar with the command syntax and the software's API to effectively use it. This makes CLIs less accessible to non-technical users compared to GUIs.
+
+4. **Efficiency for Experienced Users:** For users who are comfortable with command-line interfaces, CLIs can offer a more efficient way to interact with software. Operations that might require several clicks in a GUI can often be performed with a single command in a CLI.
+
+:::
 
 # Statistics, Data Science, & Machine Learning
 
@@ -233,11 +292,11 @@ graph LR;
 
 ```
 
-+-----------------------------------+---------------------------------+
-| #### **Computing Environment**    | #### **Workflow** / </br> **Pipeline**                                                        |
-+-----------------------------------+---------------------------------+
-| #### **Raw Data** </br> & Code    | ##### **Analysis Derivatives**</br>-*derived variables*</br>-*stats/figures*      
-+-----------------------------------+---------------------------------+
++-------------------------------------------------+------------------------------+
+| [**Computing Environment**]{style="color: red;"}|**Workflow**/</br>**Pipeline**|          
++-------------------------------------------------+------------------------------+
+| **Raw Data** </br> & Code                       | **Analysis Derivatives** </br> - *derived variables* </br> -*stats/plots*|   
++-------------------------------------------------+---------------------------+
 
 : {.table .table-bordered .text-white .border .border-white .rounded-3 tbl-colwidths="[50,50]"}
 :::
@@ -249,7 +308,10 @@ graph LR;
 ::::
 :::: {.column width="50%"}
 
-### [Computing Environment]{style="color: red;"}
+
+</br> </br> 
+
+#### [Computing Environment]{style="color: red;"}
 
 -   [ ] learn how computing works (computing abstractions, operating systems graphics hardware, applications/software, filesystems, etc.)
 -   [ ] learn shell scripting for generalizing tasks across hardware/operating systems
@@ -309,7 +371,10 @@ graph LR;
 :::: {.column width="50%"}
 
 
-### [Workflow/Pipeline]{style="color: red;"}
+
+</br> </br> 
+
+#### [Workflow/Pipeline]{style="color: red;"}
 
 -   [ ] reproducibility/open science
 
@@ -368,7 +433,10 @@ graph LR;
 ::::
 :::: {.column width="50%"}
 
-### [Raw data / code]{style="color: red;"}
+
+</br> </br> 
+
+#### [Raw data / code]{style="color: red;"}
 
 -   [ ] learn how to use this
 -   [ ] dataframe concepts
@@ -427,8 +495,9 @@ graph LR;
 ::::
 :::: {.column width="50%"}
 
+</br> </br> 
 
-### [Derivatives]{style="color: red;"}
+#### [Derivatives]{style="color: red;"}
 
 -   [ ] data wrangling in Python/R
 -   [ ] learn how to graph in Python/R
@@ -440,17 +509,76 @@ graph LR;
 :::
 
 
-## Workflow {.smaller}
 
-##### SPSS & Microsoft Office Workflow
+
+## Workflows {.smaller}
+
+::: columns
+:::: {.column width="25%"}
+
+::::: {style="display: flex;"}
+<div>
+
+</br>
+
+**SPSS & MS Office**
+
+</br></br>
+
+**Scripting in </br> Matlab / Python**
+
+</br>
+
+**Hybrid Interactive Python / Matlab**
+
+</br></br>
+
+**R & RStudio Workflow**
+
+</div>
+:::::
+
+::::
+:::: {.column width="70%"}
+
 
 ```{mermaid, echo=FALSE, warning=FALSE, message=FALSE, fig.width=12, fig.height=2}
 
 %%{init: {'theme':'forest'}}%%
 
 graph LR
-    A[Raw Data] --> B(Excel)
+    A[Raw Data] -->|Import </br> </br> </tab> | B(Excel)
     B -->|Process and </tab> </br> </br> </tab> Analyze| C(SPSS)
+    C -->|Present| D(PowerPoint)
+    C -->|Document| E(Word)
+    
+
+    classDef green fill:#9f6,stroke:#333,stroke-width:0.5px;
+    classDef orange fill:#f96,stroke:#333,stroke-width:1px;
+    classDef white fill:#fff,stroke:#333,stroke-width:1px; 
+    classDef blue fill:#6699cc,stroke:#333,stroke-width:1px;
+    classDef red fill:#D32737,stroke:#FFF,stroke-width:1.5px;
+    classDef purple fill:#6A2A60,stroke:#FFF,stroke-width:1.5px;
+    classDef royalblue fill:#0021A5,stroke:#FFF,stroke-width:1.5px;
+    
+    class B,C green
+    class A red
+    class E royalblue
+    class D purple
+
+    
+```
+
+
+```{mermaid, echo=FALSE, warning=FALSE, message=FALSE, fig.width=12, fig.height=2}
+
+%%{init: {'theme':'forest'}}%%
+
+graph LR
+
+    A[Raw Data] -->|Import </br> </br> </br> | B(IDE)
+    B -->|Process </br> </br> </tab> | C(IDE)
+    C -->|Analyze| B
     C -->|Present| D(PowerPoint)
     C -->|Document| E(Word)
     
@@ -469,64 +597,15 @@ graph LR
     class D purple
     
     
-    %%style A fill:#f9f,stroke:#333,stroke-width:2px
-    %%style B fill:#bbf,stroke:#333,stroke-width:2px
-    %%style C fill:#fbf,stroke:#333,stroke-width:2px
-    %%style D fill:#bfb,stroke:#333,stroke-width:2px
-    %%style E fill:#ffb,stroke:#333,stroke-width:2px
-    
 ```
 
-
-
-
-## Workflow {.smaller}
-
-##### SPSS & Microsoft Office Workflow
 
 ```{mermaid, echo=FALSE, warning=FALSE, message=FALSE, fig.width=12, fig.height=2}
 
 %%{init: {'theme':'forest'}}%%
 
 graph LR
-    A[Raw Data] --> B(Excel)
-    B -->|Process and </tab> </br> </br> </tab> Analyze| C(SPSS)
-    C -->|Present| D(PowerPoint)
-    C -->|Document| E(Word)
-    
-
-    classDef green fill:#9f6,stroke:#333,stroke-width:0.5px;
-    classDef orange fill:#f96,stroke:#333,stroke-width:1px;
-    classDef white fill:#fff,stroke:#333,stroke-width:1px; 
-    classDef blue fill:#6699cc,stroke:#333,stroke-width:1px;
-    classDef red fill:#D32737,stroke:#FFF,stroke-width:1.5px;
-    classDef purple fill:#6A2A60,stroke:#FFF,stroke-width:1.5px;
-    classDef royalblue fill:#0021A5,stroke:#FFF,stroke-width:1.5px;
-    
-    class B,C green
-    class A red
-    class E royalblue
-    class D purple
-    
-    
-    %%style A fill:#f9f,stroke:#333,stroke-width:2px
-    %%style B fill:#bbf,stroke:#333,stroke-width:2px
-    %%style C fill:#fbf,stroke:#333,stroke-width:2px
-    %%style D fill:#bfb,stroke:#333,stroke-width:2px
-    %%style E fill:#ffb,stroke:#333,stroke-width:2px
-    
-```
-
-
-
-##### Hybrid Workflow in Python (i.e., Jupyter Notebook)
-
-```{mermaid, echo=FALSE, warning=FALSE, message=FALSE, fig.width=12, fig.height=2}
-
-%%{init: {'theme':'forest'}}%%
-
-graph LR
-    A[Raw Data] --> B(Jupyter Notebook)
+    A[Raw Data] -->|Import </br> </br> </tab> | B(Jupyter Notebook)
     B -->|Process and </tab> </br> </br> </tab> Analyze| C(Jupyter Notebook)
     C -->|Present| D(PowerPoint)
     C -->|Document| E(Word)
@@ -546,28 +625,33 @@ graph LR
     class D purple
     
     
-    %%style A fill:#f9f,stroke:#333,stroke-width:2px
-    %%style B fill:#bbf,stroke:#333,stroke-width:2px
-    %%style C fill:#fbf,stroke:#333,stroke-width:2px
-    %%style D fill:#bfb,stroke:#333,stroke-width:2px
-    %%style E fill:#ffb,stroke:#333,stroke-width:2px
-    
 ```
 
 
-##### Hybrid Workflow in Matlab (livescript)
-
 ```{mermaid, echo=FALSE, warning=FALSE, message=FALSE, fig.width=12, fig.height=2}
 
+    
 %%{init: {'theme':'forest'}}%%
 
 graph LR
-    A[Raw Data] --> B(Jupyter Notebook)
-    B -->|Process and </tab> </br> </br> </tab> Analyze| C(Jupyter Notebook)
-    C -->|Present| D(PowerPoint)
-    C -->|Document| E(Word)
-    
 
+      subgraph RStudio
+      
+            B[RStudio]-->|Process</tab> </br> </br> </tab>| C[RStudio]
+            C -->| Visualize</tab> </br> </br> </tab> | D[RStudio]
+            D -->| Analyze</tab> </br> </br> </tab> | B
+
+        end
+
+      subgraph Output
+            D --> F[Documents /</br>Slides /</br>Dashboards /</br>Websites]
+        end
+        
+      subgraph Input
+            A[Raw Data] -->|Import </br> </br> </tab> | B
+        end
+ 
+    
     classDef green fill:#9f6,stroke:#333,stroke-width:0.5px;
     classDef orange fill:#f96,stroke:#333,stroke-width:1px;
     classDef white fill:#fff,stroke:#333,stroke-width:1px; 
@@ -576,34 +660,40 @@ graph LR
     classDef purple fill:#6A2A60,stroke:#FFF,stroke-width:1.5px;
     classDef royalblue fill:#0021A5,stroke:#FFF,stroke-width:1.5px;
     
+    class RStudio,Input,Output white
     class B,C green
     class A red
-    class E royalblue
-    class D purple
-    
-    
-    %%style A fill:#f9f,stroke:#333,stroke-width:2px
-    %%style B fill:#bbf,stroke:#333,stroke-width:2px
-    %%style C fill:#fbf,stroke:#333,stroke-width:2px
-    %%style D fill:#bfb,stroke:#333,stroke-width:2px
-    %%style E fill:#ffb,stroke:#333,stroke-width:2px
+    class D royalblue
+    class F purple
+
     
 ```
 
-::: {.fragment .fade-in}
+::::
+:::
 
-##### R & RStudio Workflow
+## R & RStudio Workflow
 
 ```{mermaid, echo=FALSE, warning=FALSE, message=FALSE, fig.width=12, fig.height=2}
+
 
 %%{init: {'theme':'forest'}}%%
 
 graph LR
-    A[Raw Data] --> B(RStudio)
-    B -->|Process and </tab> </br> </br> </tab> Analyze| C(RStudio)
-    C -->|Present and </tab> </br> </br> </tab> Document| D(RStudio)
-    
 
+    A[Raw Data] -->|Import </br> </br> </tab> | C[RStudio]
+    
+      subgraph RStudio
+            direction LR
+            B[RStudio]-->|Process</tab> </br> </br> </tab>| C
+            C -->| Analyze</tab> </br> </br> </tab> | B
+            
+
+        end
+
+
+  B -->|Present and </tab> </br> </br> </tab> Document| E[Documents/Slides/Dashboards/Websites]
+  
     classDef green fill:#9f6,stroke:#333,stroke-width:0.5px;
     classDef orange fill:#f96,stroke:#333,stroke-width:1px;
     classDef white fill:#fff,stroke:#333,stroke-width:1px; 
@@ -612,28 +702,24 @@ graph LR
     classDef purple fill:#6A2A60,stroke:#FFF,stroke-width:1.5px;
     classDef royalblue fill:#0021A5,stroke:#FFF,stroke-width:1.5px;
     
+    class RStudio white
     class B,C green
     class A red
     class D royalblue
 
-    
-    %%style A fill:#f9f,stroke:#333,stroke-width:2px
-    %%style B fill:#bbf,stroke:#333,stroke-width:2px
-    %%style C fill:#fbf,stroke:#333,stroke-width:2px
-    %%style D fill:#bfb,stroke:#333,stroke-width:2px
-    %%style E fill:#ffb,stroke:#333,stroke-width:2px
-    
 ```
 
-:::
 
-## Analyze Behavior  {.smaller}
+
+
+## Video Behavior Analysis Workflow  {.smaller}
 
 
 
 ```{mermaid, echo=FALSE, warning=FALSE, message=FALSE, fig.width=12, fig.height=3}
 
 %%{init: {'theme':'forest'}}%%
+
 graph LR
 
     subgraph Analysis
@@ -641,11 +727,11 @@ graph LR
     end
  
     subgraph ETHZ-INS/DLCAnalyzer
-        s3 --> s4[Data Wrangling</br> Graphing]
+        s3 --> s4[Data Wrangling </br> Graphing]
         s5 --> s6[Data Wrangling]
         s6 --> s4
         
-        subgraph dlca[Derivative Variables </br> Data Visualizations]
+        subgraph dlca[</tab> </br> Derivative Variables / Data Visualizations]
           s4 --> s5[unsupervised</br> classification</br> and clustering]
         end
     end

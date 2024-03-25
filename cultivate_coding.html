@@ -435,9 +435,9 @@ but you don’t reply to email.</p>
 <h2>Code, How?</h2>
 <div>
 <ul>
-<li class="fragment"><em>Adapt</em> example code directly from MNE documentation</li>
+<li class="fragment"><em>Adapt</em> example code directly from online documentation</li>
 <li class="fragment"><em>Flexibly</em> accommodate new datatypes &amp; formats</li>
-<li class="fragment"><em>Integrate</em> extensive python libraries &amp; solutions from others</li>
+<li class="fragment"><em>Integrate</em> extensive additional code libraries &amp; solutions from others</li>
 <li class="fragment"><em>Repeat</em> analysis with additional data or with changes to initial steps for reanalyzing the same data</li>
 <li class="fragment"><em>Reuse</em> with minor modifications for similar data</li>
 <li class="fragment"><em>Share</em> with others so they can modify, repeat, reuse, and build on code</li>
@@ -485,8 +485,56 @@ but you don’t reply to email.</p>
 </tbody>
 </table>
 </section>
-<section class="slide level2">
-
+<section id="code-libraries-apis" class="slide level2 smaller">
+<h2>Code Libraries &amp; APIs</h2>
+<ul>
+<li><strong>Code Libraries</strong>: collections of pre-written code that can be used to perform tasks.</li>
+<li><strong>APIs</strong> (Application Programming Interfaces): rules &amp; protocols allowing users or other applications to interact with a software application.</li>
+</ul>
+<div class="columns">
+<div class="column" style="width:50%;">
+<h4 id="gui-graphical-user-interface">GUI (Graphical User Interface)</h4>
+<ul>
+<li>Intuitiveness and Accessibility</li>
+<li>Limited to Pre-defined Options</li>
+<li>Event-Driven Programming</li>
+</ul>
+</div><div class="column" style="width:&quot;50%;">
+<h4 id="cli-command-line-interface">CLI (Command Line Interface)</h4>
+<ul>
+<li>Flexibility and Control</li>
+<li>Scripting and Automation</li>
+<li>Steep Learning Curve</li>
+<li>Efficiency for Experienced Users</li>
+</ul>
+</div>
+</div>
+<aside class="notes">
+<p>Ways in which users or computers interact with APIs can vary significantly between GUIs and CLIs, reflecting differences in usability, flexibility, and the type of user experience they are designed to offer.</p>
+<p>GUI</p>
+<ol type="1">
+<li><p><strong>Intuitiveness and Accessibility:</strong> GUIs are designed to be intuitive and accessible to users, offering graphical elements such as buttons, icons, and menus to interact with. The API in the context of a GUI might be more about how these elements are programmed to interact with the software’s logic and data. Users don’t usually interact with the API directly but through these graphical elements.</p></li>
+<li><p><strong>Limited to Pre-defined Options:</strong> GUIs often limit the user to predefined operations or workflows designed by the application developers. The API interactions are therefore constrained by what the GUI offers, making it potentially less flexible but simpler for non-technical users.</p></li>
+<li><p><strong>Event-Driven Programming:</strong> GUI APIs are heavily reliant on event-driven programming, where code execution is triggered by user actions like clicks, drags, and drops. This model affects how APIs are structured and utilized in GUI applications, focusing on responsiveness and user interaction feedback.</p></li>
+</ol>
+<p>CLI</p>
+<ol type="1">
+<li><p><strong>Flexibility and Control:</strong> CLI provides a more direct and text-based way to interact with software, offering greater flexibility and control to the user. Users can combine commands in scripts, automate tasks, and utilize the full breadth of the API’s capabilities. This makes CLIs particularly favored by developers and system administrators.</p></li>
+<li><p><strong>Scripting and Automation:</strong> CLI allows for scripting and automation. Users can write scripts that directly call an application’s API functions, enabling complex workflows and batch processing. This aspect is less inherent in GUIs, which are more designed for interactive use.</p></li>
+<li><p><strong>Steep Learning Curve:</strong> The increased power and flexibility of CLIs come with a steeper learning curve. Users must be familiar with the command syntax and the software’s API to effectively use it. This makes CLIs less accessible to non-technical users compared to GUIs.</p></li>
+<li><p><strong>Efficiency for Experienced Users:</strong> For users who are comfortable with command-line interfaces, CLIs can offer a more efficient way to interact with software. Operations that might require several clicks in a GUI can often be performed with a single command in a CLI.</p></li>
+</ol>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
 </section></section>
 <section>
 <section id="statistics-data-science-machine-learning" class="title-slide slide level1 center">
@@ -654,6 +702,74 @@ graph LR;
 </div>
 </div>
 </div>
+<table class="table table-bordered text-white border border-white rounded-3" style="width:99%;">
+<caption></caption>
+<colgroup>
+<col style="width: 33%">
+<col style="width: 33%">
+<col style="width: 33%">
+</colgroup>
+<tbody>
+<tr class="odd">
+<td><span style="color: red;"><strong>Computing Environment</strong></span></td>
+<td><strong>Workflow</strong>/<br><strong>Pipeline</strong></td>
+<td></td>
+</tr>
+<tr class="even">
+<td><strong>Raw Data</strong> <br> &amp; Code</td>
+<td><strong>Analysis Derivatives</strong> <br> - <em>derived variables</em> <br> -<em>stats/plots</em></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div><div class="column" style="width:50%;">
+<p><br> <br></p>
+<h4 id="computing-environment"><span style="color: red;">Computing Environment</span></h4>
+<ul class="task-list">
+<li><input type="checkbox">learn how computing works (computing abstractions, operating systems graphics hardware, applications/software, filesystems, etc.)</li>
+<li><input type="checkbox">learn shell scripting for generalizing tasks across hardware/operating systems</li>
+</ul>
+</div>
+</div>
+</section>
+<section id="computational-reproducibility-1" class="slide level2 smaller">
+<h2>Computational Reproducibility</h2>
+<div class="columns">
+<div class="column" style="width:50%;">
+<div style="display: flex;">
+<div>
+<p>Specificity</p>
+<div class="cell" data-reveal="true">
+<div class="cell-output-display">
+<div>
+<div>
+<pre class="mermaid mermaid-js">graph TD;
+    A[coarse] -----&gt; B[granular]
+
+
+</pre>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="middle" style="text-align: center">
+<div class="cell" data-reveal="true">
+<div class="cell-output-display">
+<div>
+<div>
+<pre class="mermaid mermaid-js">
+graph LR;
+    A[Abstract] ---&gt; |Representativeness &lt;/br&gt; &lt;/br&gt; &lt;/tab&gt; | B[Concrete]
+
+
+</pre>
+</div>
+</div>
+</div>
+</div>
 <table class="table table-bordered text-white border border-white rounded-3">
 <caption></caption>
 <colgroup>
@@ -662,7 +778,7 @@ graph LR;
 </colgroup>
 <tbody>
 <tr class="odd">
-<td><h4 id="computing-environment"><strong>Computing Environment</strong></h4></td>
+<td><h4 id="computing-environment-1"><strong>Computing Environment</strong></h4></td>
 <td><h4 id="workflow-pipeline"><strong>Workflow</strong> / <br> <strong>Pipeline</strong></h4></td>
 </tr>
 <tr class="even">
@@ -674,15 +790,15 @@ graph LR;
 </div>
 </div>
 </div><div class="column" style="width:50%;">
-<h3 id="computing-environment-1"><span style="color: red;">Computing Environment</span></h3>
+<p><br> <br></p>
+<h4 id="workflowpipeline"><span style="color: red;">Workflow/Pipeline</span></h4>
 <ul class="task-list">
-<li><input type="checkbox">learn how computing works (computing abstractions, operating systems graphics hardware, applications/software, filesystems, etc.)</li>
-<li><input type="checkbox">learn shell scripting for generalizing tasks across hardware/operating systems</li>
+<li><input type="checkbox">reproducibility/open science</li>
 </ul>
 </div>
 </div>
 </section>
-<section id="computational-reproducibility-1" class="slide level2 smaller">
+<section id="computational-reproducibility-2" class="slide level2 smaller">
 <h2>Computational Reproducibility</h2>
 <div class="columns">
 <div class="column" style="width:50%;">
@@ -738,70 +854,8 @@ graph LR;
 </div>
 </div>
 </div><div class="column" style="width:50%;">
-<h3 id="workflowpipeline"><span style="color: red;">Workflow/Pipeline</span></h3>
-<ul class="task-list">
-<li><input type="checkbox">reproducibility/open science</li>
-</ul>
-</div>
-</div>
-</section>
-<section id="computational-reproducibility-2" class="slide level2 smaller">
-<h2>Computational Reproducibility</h2>
-<div class="columns">
-<div class="column" style="width:50%;">
-<div style="display: flex;">
-<div>
-<p>Specificity</p>
-<div class="cell" data-reveal="true">
-<div class="cell-output-display">
-<div>
-<div>
-<pre class="mermaid mermaid-js">graph TD;
-    A[coarse] -----&gt; B[granular]
-
-
-</pre>
-</div>
-</div>
-</div>
-</div>
-</div>
-<div class="middle" style="text-align: center">
-<div class="cell" data-reveal="true">
-<div class="cell-output-display">
-<div>
-<div>
-<pre class="mermaid mermaid-js">
-graph LR;
-    A[Abstract] ---&gt; |Representativeness &lt;/br&gt; &lt;/br&gt; &lt;/tab&gt; | B[Concrete]
-
-
-</pre>
-</div>
-</div>
-</div>
-</div>
-<table class="table table-bordered text-white border border-white rounded-3">
-<caption></caption>
-<colgroup>
-<col style="width: 50%">
-<col style="width: 50%">
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><h4 id="computing-environment-3"><strong>Computing Environment</strong></h4></td>
-<td><h4 id="workflow-pipeline-2"><strong>Workflow</strong> / <br> <strong>Pipeline</strong></h4></td>
-</tr>
-<tr class="even">
-<td><h4 id="raw-data-code-2"><strong>Raw Data</strong> <br> &amp; Code</h4></td>
-<td><h5 id="analysis-derivatives-derived-variables-statsfigures-2"><strong>Analysis Derivatives</strong><br>-<em>derived variables</em><br>-<em>stats/figures</em></h5></td>
-</tr>
-</tbody>
-</table>
-</div>
-</div>
-</div><div class="column" style="width:50%;">
-<h3 id="raw-data-code-3"><span style="color: red;">Raw data / code</span></h3>
+<p><br> <br></p>
+<h4 id="raw-data-code-2"><span style="color: red;">Raw data / code</span></h4>
 <ul class="task-list">
 <li><input type="checkbox">learn how to use this</li>
 <li><input type="checkbox">dataframe concepts</li>
@@ -853,19 +907,20 @@ graph LR;
 </colgroup>
 <tbody>
 <tr class="odd">
-<td><h4 id="computing-environment-4"><strong>Computing Environment</strong></h4></td>
-<td><h4 id="workflow-pipeline-3"><strong>Workflow</strong> / <br> <strong>Pipeline</strong></h4></td>
+<td><h4 id="computing-environment-3"><strong>Computing Environment</strong></h4></td>
+<td><h4 id="workflow-pipeline-2"><strong>Workflow</strong> / <br> <strong>Pipeline</strong></h4></td>
 </tr>
 <tr class="even">
-<td><h4 id="raw-data-code-4"><strong>Raw Data</strong> <br> &amp; Code</h4></td>
-<td><h5 id="analysis-derivatives-derived-variables-statsfigures-3"><strong>Analysis Derivatives</strong><br>-<em>derived variables</em><br>-<em>stats/figures</em></h5></td>
+<td><h4 id="raw-data-code-3"><strong>Raw Data</strong> <br> &amp; Code</h4></td>
+<td><h5 id="analysis-derivatives-derived-variables-statsfigures-2"><strong>Analysis Derivatives</strong><br>-<em>derived variables</em><br>-<em>stats/figures</em></h5></td>
 </tr>
 </tbody>
 </table>
 </div>
 </div>
 </div><div class="column" style="width:50%;">
-<h3 id="derivatives"><span style="color: red;">Derivatives</span></h3>
+<p><br> <br></p>
+<h4 id="derivatives"><span style="color: red;">Derivatives</span></h4>
 <ul class="task-list">
 <li><input type="checkbox">data wrangling in Python/R</li>
 <li><input type="checkbox">learn how to graph in Python/R</li>
@@ -875,9 +930,23 @@ graph LR;
 </div>
 </div>
 </section>
-<section id="workflow" class="slide level2 smaller">
-<h2>Workflow</h2>
-<h5 id="spss-microsoft-office-workflow">SPSS &amp; Microsoft Office Workflow</h5>
+<section id="workflows" class="slide level2 smaller">
+<h2>Workflows</h2>
+<div class="columns">
+<div class="column" style="width:25%;">
+<div style="display: flex;">
+<div>
+<p><br></p>
+<p><strong>SPSS &amp; MS Office</strong></p>
+<p><br><br></p>
+<p><strong>Scripting in <br> Matlab / Python</strong></p>
+<p><br></p>
+<p><strong>Hybrid Interactive Python / Matlab</strong></p>
+<p><br><br></p>
+<p><strong>R &amp; RStudio Workflow</strong></p>
+</div>
+</div>
+</div><div class="column" style="width:70%;">
 <div class="cell" data-reveal="true">
 <div class="cell-output-display">
 <div>
@@ -885,8 +954,42 @@ graph LR;
 <pre class="mermaid mermaid-js">%%{init: {'theme':'forest'}}%%
 
 graph LR
-    A[Raw Data] --&gt; B(Excel)
+    A[Raw Data] --&gt;|Import &lt;/br&gt; &lt;/br&gt; &lt;/tab&gt; | B(Excel)
     B --&gt;|Process and &lt;/tab&gt; &lt;/br&gt; &lt;/br&gt; &lt;/tab&gt; Analyze| C(SPSS)
+    C --&gt;|Present| D(PowerPoint)
+    C --&gt;|Document| E(Word)
+    
+
+    classDef green fill:#9f6,stroke:#333,stroke-width:0.5px;
+    classDef orange fill:#f96,stroke:#333,stroke-width:1px;
+    classDef white fill:#fff,stroke:#333,stroke-width:1px; 
+    classDef blue fill:#6699cc,stroke:#333,stroke-width:1px;
+    classDef red fill:#D32737,stroke:#FFF,stroke-width:1.5px;
+    classDef purple fill:#6A2A60,stroke:#FFF,stroke-width:1.5px;
+    classDef royalblue fill:#0021A5,stroke:#FFF,stroke-width:1.5px;
+    
+    class B,C green
+    class A red
+    class E royalblue
+    class D purple
+
+    
+</pre>
+</div>
+</div>
+</div>
+</div>
+<div class="cell" data-reveal="true">
+<div class="cell-output-display">
+<div>
+<div>
+<pre class="mermaid mermaid-js">%%{init: {'theme':'forest'}}%%
+
+graph LR
+
+    A[Raw Data] --&gt;|Import &lt;/br&gt; &lt;/br&gt; &lt;/br&gt; | B(IDE)
+    B --&gt;|Process &lt;/br&gt; &lt;/br&gt; &lt;/tab&gt; | C(IDE)
+    C --&gt;|Analyze| B
     C --&gt;|Present| D(PowerPoint)
     C --&gt;|Document| E(Word)
     
@@ -905,34 +1008,116 @@ graph LR
     class D purple
     
     
-    %%style A fill:#f9f,stroke:#333,stroke-width:2px
-    %%style B fill:#bbf,stroke:#333,stroke-width:2px
-    %%style C fill:#fbf,stroke:#333,stroke-width:2px
-    %%style D fill:#bfb,stroke:#333,stroke-width:2px
-    %%style E fill:#ffb,stroke:#333,stroke-width:2px
+</pre>
+</div>
+</div>
+</div>
+</div>
+<div class="cell" data-reveal="true">
+<div class="cell-output-display">
+<div>
+<div>
+<pre class="mermaid mermaid-js">%%{init: {'theme':'forest'}}%%
+
+graph LR
+    A[Raw Data] --&gt;|Import &lt;/br&gt; &lt;/br&gt; &lt;/tab&gt; | B(Jupyter Notebook)
+    B --&gt;|Process and &lt;/tab&gt; &lt;/br&gt; &lt;/br&gt; &lt;/tab&gt; Analyze| C(Jupyter Notebook)
+    C --&gt;|Present| D(PowerPoint)
+    C --&gt;|Document| E(Word)
+    
+
+    classDef green fill:#9f6,stroke:#333,stroke-width:0.5px;
+    classDef orange fill:#f96,stroke:#333,stroke-width:1px;
+    classDef white fill:#fff,stroke:#333,stroke-width:1px; 
+    classDef blue fill:#6699cc,stroke:#333,stroke-width:1px;
+    classDef red fill:#D32737,stroke:#FFF,stroke-width:1.5px;
+    classDef purple fill:#6A2A60,stroke:#FFF,stroke-width:1.5px;
+    classDef royalblue fill:#0021A5,stroke:#FFF,stroke-width:1.5px;
+    
+    class B,C green
+    class A red
+    class E royalblue
+    class D purple
+    
     
 </pre>
+</div>
+</div>
+</div>
+</div>
+<div class="cell" data-reveal="true">
+<div class="cell-output-display">
+<div>
+<div>
+<pre class="mermaid mermaid-js">    
+%%{init: {'theme':'forest'}}%%
+
+graph LR
+
+      subgraph RStudio
+      
+            B[RStudio]--&gt;|Process&lt;/tab&gt; &lt;/br&gt; &lt;/br&gt; &lt;/tab&gt;| C[RStudio]
+            C --&gt;| Visualize&lt;/tab&gt; &lt;/br&gt; &lt;/br&gt; &lt;/tab&gt; | D[RStudio]
+            D --&gt;| Analyze&lt;/tab&gt; &lt;/br&gt; &lt;/br&gt; &lt;/tab&gt; | B
+
+        end
+
+      subgraph Output
+            D --&gt; F[Documents /&lt;/br&gt;Slides /&lt;/br&gt;Dashboards /&lt;/br&gt;Websites]
+        end
+        
+      subgraph Input
+            A[Raw Data] --&gt;|Import &lt;/br&gt; &lt;/br&gt; &lt;/tab&gt; | B
+        end
+ 
+    
+    classDef green fill:#9f6,stroke:#333,stroke-width:0.5px;
+    classDef orange fill:#f96,stroke:#333,stroke-width:1px;
+    classDef white fill:#fff,stroke:#333,stroke-width:1px; 
+    classDef blue fill:#6699cc,stroke:#333,stroke-width:1px;
+    classDef red fill:#D32737,stroke:#FFF,stroke-width:1.5px;
+    classDef purple fill:#6A2A60,stroke:#FFF,stroke-width:1.5px;
+    classDef royalblue fill:#0021A5,stroke:#FFF,stroke-width:1.5px;
+    
+    class RStudio,Input,Output white
+    class B,C green
+    class A red
+    class D royalblue
+    class F purple
+
+    
+</pre>
+</div>
+</div>
 </div>
 </div>
 </div>
 </div>
 </section>
-<section id="workflow-1" class="slide level2 smaller">
-<h2>Workflow</h2>
-<h5 id="spss-microsoft-office-workflow-1">SPSS &amp; Microsoft Office Workflow</h5>
+<section id="r-rstudio-workflow" class="slide level2">
+<h2>R &amp; RStudio Workflow</h2>
 <div class="cell" data-reveal="true">
 <div class="cell-output-display">
 <div>
 <div>
-<pre class="mermaid mermaid-js">%%{init: {'theme':'forest'}}%%
+<pre class="mermaid mermaid-js">
+%%{init: {'theme':'forest'}}%%
 
 graph LR
-    A[Raw Data] --&gt; B(Excel)
-    B --&gt;|Process and &lt;/tab&gt; &lt;/br&gt; &lt;/br&gt; &lt;/tab&gt; Analyze| C(SPSS)
-    C --&gt;|Present| D(PowerPoint)
-    C --&gt;|Document| E(Word)
-    
 
+    A[Raw Data] --&gt;|Import &lt;/br&gt; &lt;/br&gt; &lt;/tab&gt; | C[RStudio]
+    
+      subgraph RStudio
+            direction LR
+            B[RStudio]--&gt;|Process&lt;/tab&gt; &lt;/br&gt; &lt;/br&gt; &lt;/tab&gt;| C
+            C --&gt;| Analyze&lt;/tab&gt; &lt;/br&gt; &lt;/br&gt; &lt;/tab&gt; | B
+            
+
+        end
+
+
+  B --&gt;|Present and &lt;/tab&gt; &lt;/br&gt; &lt;/br&gt; &lt;/tab&gt; Document| E[Documents/Slides/Dashboards/Websites]
+  
     classDef green fill:#9f6,stroke:#333,stroke-width:0.5px;
     classDef orange fill:#f96,stroke:#333,stroke-width:1px;
     classDef white fill:#fff,stroke:#333,stroke-width:1px; 
@@ -941,149 +1126,25 @@ graph LR
     classDef purple fill:#6A2A60,stroke:#FFF,stroke-width:1.5px;
     classDef royalblue fill:#0021A5,stroke:#FFF,stroke-width:1.5px;
     
-    class B,C green
-    class A red
-    class E royalblue
-    class D purple
-    
-    
-    %%style A fill:#f9f,stroke:#333,stroke-width:2px
-    %%style B fill:#bbf,stroke:#333,stroke-width:2px
-    %%style C fill:#fbf,stroke:#333,stroke-width:2px
-    %%style D fill:#bfb,stroke:#333,stroke-width:2px
-    %%style E fill:#ffb,stroke:#333,stroke-width:2px
-    
-</pre>
-</div>
-</div>
-</div>
-</div>
-<h5 id="hybrid-workflow-in-python-i.e.-jupyter-notebook">Hybrid Workflow in Python (i.e., Jupyter Notebook)</h5>
-<div class="cell" data-reveal="true">
-<div class="cell-output-display">
-<div>
-<div>
-<pre class="mermaid mermaid-js">%%{init: {'theme':'forest'}}%%
-
-graph LR
-    A[Raw Data] --&gt; B(Jupyter Notebook)
-    B --&gt;|Process and &lt;/tab&gt; &lt;/br&gt; &lt;/br&gt; &lt;/tab&gt; Analyze| C(Jupyter Notebook)
-    C --&gt;|Present| D(PowerPoint)
-    C --&gt;|Document| E(Word)
-    
-
-    classDef green fill:#9f6,stroke:#333,stroke-width:0.5px;
-    classDef orange fill:#f96,stroke:#333,stroke-width:1px;
-    classDef white fill:#fff,stroke:#333,stroke-width:1px; 
-    classDef blue fill:#6699cc,stroke:#333,stroke-width:1px;
-    classDef red fill:#D32737,stroke:#FFF,stroke-width:1.5px;
-    classDef purple fill:#6A2A60,stroke:#FFF,stroke-width:1.5px;
-    classDef royalblue fill:#0021A5,stroke:#FFF,stroke-width:1.5px;
-    
-    class B,C green
-    class A red
-    class E royalblue
-    class D purple
-    
-    
-    %%style A fill:#f9f,stroke:#333,stroke-width:2px
-    %%style B fill:#bbf,stroke:#333,stroke-width:2px
-    %%style C fill:#fbf,stroke:#333,stroke-width:2px
-    %%style D fill:#bfb,stroke:#333,stroke-width:2px
-    %%style E fill:#ffb,stroke:#333,stroke-width:2px
-    
-</pre>
-</div>
-</div>
-</div>
-</div>
-<h5 id="hybrid-workflow-in-matlab-livescript">Hybrid Workflow in Matlab (livescript)</h5>
-<div class="cell" data-reveal="true">
-<div class="cell-output-display">
-<div>
-<div>
-<pre class="mermaid mermaid-js">%%{init: {'theme':'forest'}}%%
-
-graph LR
-    A[Raw Data] --&gt; B(Jupyter Notebook)
-    B --&gt;|Process and &lt;/tab&gt; &lt;/br&gt; &lt;/br&gt; &lt;/tab&gt; Analyze| C(Jupyter Notebook)
-    C --&gt;|Present| D(PowerPoint)
-    C --&gt;|Document| E(Word)
-    
-
-    classDef green fill:#9f6,stroke:#333,stroke-width:0.5px;
-    classDef orange fill:#f96,stroke:#333,stroke-width:1px;
-    classDef white fill:#fff,stroke:#333,stroke-width:1px; 
-    classDef blue fill:#6699cc,stroke:#333,stroke-width:1px;
-    classDef red fill:#D32737,stroke:#FFF,stroke-width:1.5px;
-    classDef purple fill:#6A2A60,stroke:#FFF,stroke-width:1.5px;
-    classDef royalblue fill:#0021A5,stroke:#FFF,stroke-width:1.5px;
-    
-    class B,C green
-    class A red
-    class E royalblue
-    class D purple
-    
-    
-    %%style A fill:#f9f,stroke:#333,stroke-width:2px
-    %%style B fill:#bbf,stroke:#333,stroke-width:2px
-    %%style C fill:#fbf,stroke:#333,stroke-width:2px
-    %%style D fill:#bfb,stroke:#333,stroke-width:2px
-    %%style E fill:#ffb,stroke:#333,stroke-width:2px
-    
-</pre>
-</div>
-</div>
-</div>
-</div>
-<div class="fragment fade-in">
-<!-- -->
-<h5 id="r-rstudio-workflow">R &amp; RStudio Workflow</h5>
-<div class="cell" data-reveal="true">
-<div class="cell-output-display">
-<div>
-<div>
-<pre class="mermaid mermaid-js">%%{init: {'theme':'forest'}}%%
-
-graph LR
-    A[Raw Data] --&gt; B(RStudio)
-    B --&gt;|Process and &lt;/tab&gt; &lt;/br&gt; &lt;/br&gt; &lt;/tab&gt; Analyze| C(RStudio)
-    C --&gt;|Present and &lt;/tab&gt; &lt;/br&gt; &lt;/br&gt; &lt;/tab&gt; Document| D(RStudio)
-    
-
-    classDef green fill:#9f6,stroke:#333,stroke-width:0.5px;
-    classDef orange fill:#f96,stroke:#333,stroke-width:1px;
-    classDef white fill:#fff,stroke:#333,stroke-width:1px; 
-    classDef blue fill:#6699cc,stroke:#333,stroke-width:1px;
-    classDef red fill:#D32737,stroke:#FFF,stroke-width:1.5px;
-    classDef purple fill:#6A2A60,stroke:#FFF,stroke-width:1.5px;
-    classDef royalblue fill:#0021A5,stroke:#FFF,stroke-width:1.5px;
-    
+    class RStudio white
     class B,C green
     class A red
     class D royalblue
 
-    
-    %%style A fill:#f9f,stroke:#333,stroke-width:2px
-    %%style B fill:#bbf,stroke:#333,stroke-width:2px
-    %%style C fill:#fbf,stroke:#333,stroke-width:2px
-    %%style D fill:#bfb,stroke:#333,stroke-width:2px
-    %%style E fill:#ffb,stroke:#333,stroke-width:2px
-    
 </pre>
 </div>
 </div>
 </div>
 </div>
-</div>
 </section>
-<section id="analyze-behavior" class="slide level2 smaller">
-<h2>Analyze Behavior</h2>
+<section id="video-behavior-analysis-workflow" class="slide level2 smaller">
+<h2>Video Behavior Analysis Workflow</h2>
 <div class="cell" data-reveal="true">
 <div class="cell-output-display">
 <div>
 <div>
 <pre class="mermaid mermaid-js">%%{init: {'theme':'forest'}}%%
+
 graph LR
 
     subgraph Analysis
@@ -1091,11 +1152,11 @@ graph LR
     end
  
     subgraph ETHZ-INS/DLCAnalyzer
-        s3 --&gt; s4[Data Wrangling&lt;/br&gt; Graphing]
+        s3 --&gt; s4[Data Wrangling &lt;/br&gt; Graphing]
         s5 --&gt; s6[Data Wrangling]
         s6 --&gt; s4
         
-        subgraph dlca[Derivative Variables &lt;/br&gt; Data Visualizations]
+        subgraph dlca[&lt;/tab&gt; &lt;/br&gt; Derivative Variables / Data Visualizations]
           s4 --&gt; s5[unsupervised&lt;/br&gt; classification&lt;/br&gt; and clustering]
         end
     end
