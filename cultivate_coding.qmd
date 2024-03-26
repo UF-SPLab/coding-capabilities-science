@@ -125,7 +125,40 @@ CLI
 
 :::
 
-# Statistics & Data Science
+
+
+## Data Science Activities {.smaller}
+
+::: columns
+:::: {.column width="50%"}
+
+1. Data Gathering, Preparation, and Exploration
+2. Data Representation and Transformation
+3. Computing with Data
+4. Data Modeling
+5. Data Visualization and Presentation
+6. Science about Data Science
+
+
+
+*From Donoho, 2017.*^[Donoho, D. (2017). 50 years of data science. Journal of</br> Computational  and  Graphical Statistics, 26(4), 745-766.</br>  [https://doi.org/10.1080/10618600.2017.1384734](https://doi.org/10.1080/10618600.2017.1384734)]
+
+
+
+::::
+:::: {.column width="50%"}
+
+Ismay, C., & Kim, A. Y. (2019). Statistical inference via data science: a ModernDive into R and the tidyverse. Chapman and Hall/CRC. [https://moderndive.com/](https://moderndive.com/)
+
+Navarro, D. (2015). Learning statistics with R: A tutorial for psychology students and other beginners (version 0.6). University of New South Wales. [https://learningstatisticswithr.com/](https://learningstatisticswithr.com/)
+
+Donoghue T, Voytek B, & Ellis S (2022). Course Materials for Data Science in 
+Practice. Journal of Open Source Education, 5(51), 121. [https://doi.org/10.21105/jose.00121](https://doi.org/10.21105/jose.00121)
+
+::::
+:::
+
+
 
 ## Statistics & Data Science Curricula {.smaller}
 
@@ -180,41 +213,7 @@ CLI
 
 
 
-## Data Science Activities {.smaller}
-
-::: columns
-:::: {.column width="50%"}
-
-1. Data Gathering, Preparation, and Exploration
-2. Data Representation and Transformation
-3. Computing with Data
-4. Data Modeling
-5. Data Visualization and Presentation
-6. Science about Data Science
-
-
-
-*From Donoho, 2017.*^[Donoho, D. (2017). 50 years of data science. Journal of</br> Computational  and  Graphical Statistics, 26(4), 745-766.</br>  [https://doi.org/10.1080/10618600.2017.1384734](https://doi.org/10.1080/10618600.2017.1384734)]
-
-
-
-::::
-:::: {.column width="50%"}
-
-Ismay, C., & Kim, A. Y. (2019). Statistical inference via data science: a ModernDive into R and the tidyverse. Chapman and Hall/CRC. [https://moderndive.com/](https://moderndive.com/)
-
-Navarro, D. (2015). Learning statistics with R: A tutorial for psychology students and other beginners (version 0.6). University of New South Wales. [https://learningstatisticswithr.com/](https://learningstatisticswithr.com/)
-
-Donoghue T, Voytek B, & Ellis S (2022). Course Materials for Data Science in 
-Practice. Journal of Open Source Education, 5(51), 121. [https://doi.org/10.21105/jose.00121](https://doi.org/10.21105/jose.00121)
-
-::::
-:::
-
-
-# Scientific Data Analysis Workflows
-
-## Conventional Data Processing 
+## Conventional Data Analysis Workflows
 
 
 ::: columns
@@ -598,8 +597,9 @@ graph LR;
 
 
 
+# Workflows (Pipelines)
 
-## Workflows {.smaller}
+## Types of Workflows {.smaller}
 
 ::: columns
 :::: {.column width="25%"}
@@ -889,7 +889,7 @@ graph LR;
 
 ```
 
-# MNE-BIDS-pipeline {.smaller}
+## MNE-BIDS-pipeline {.smaller}
 
 1.  Prepare your dataset
 2.  Create a configuration file
@@ -959,9 +959,7 @@ To run part of the pipeline, you can specify the stage you want to run:
 -   You can also run multiple steps with one command by separating different steps by a comma. For example, to run preprocessing and sensor-level processing steps using a single command, do:
     -   `mne_bids_pipeline --config=/path/to/your/custom_config.py --steps=preprocessing,sensor`
 
-# Running the pipeline on HiPerGator {.smaller}
-
-## Log on to HiPerGator terminal/shell {.smaller}
+## Running the pipeline on HiPerGator {.smaller}
 
 Connect to UF Research Computing HPG3 Cluster from terminal on macOS
 
@@ -1296,16 +1294,22 @@ knitr::kable(honeymoon_period_longer)
 ## Tabular Data Frames & Cognitive Load {.smaller}
 
 
-## {.center}
+
 
 > Programming for humans not machines 
 >  
 > - Hal Abelson
 
 
-# Tidyverse R
+## 
 
-```{latex}
+> Programming for humans not machines 
+>  
+> - Hal Abelson
+
+::: {.fragment}
+
+```{latex, echo=T}
                                           .---> Communicate
 read -> wrangle ---.--> transform ---+-- /
                    ^                 |            
@@ -1313,6 +1317,9 @@ read -> wrangle ---.--> transform ---+-- /
                    model <-- visualize 
                    
 ```
+
+:::
+
 
 ## Tidyverse Concepts
 
