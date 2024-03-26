@@ -51,12 +51,12 @@ editor: visual
 
 ------------------------------------------------------------------------
 
-## Return on Investment
+## Return on Investment for Code {.smaller}
 
 | Advantages                      | Limitations                         |
 |---------------------------------|-------------------------------------|
 | High Customization              | Increased User Knowledge Dependence |
-| High Composability              | Reduced Usability                   |
+| High Composability              | Reduced Usability for Novices                   |
 | Graphical Resource Independence | Explicit Command Requirement        |
 | Integration & Modularity        |                                     |
 | Utility of Scale                |                                     |
@@ -77,7 +77,8 @@ editor: visual
 #### GUI (Graphical User Interface)
 
 - Intuitiveness and Accessibility
-- Limited to Pre-defined Options
+- Limited to Pre-defined Options (i.e., graphical elements)
+- API is rigidly structured & hidden
 - Event-Driven Programming
 
 
@@ -87,9 +88,9 @@ editor: visual
 
 #### CLI (Command Line Interface)
 
-- Flexibility and Control
+- High Flexibility and Control
 - Scripting and Automation
-- Steep Learning Curve
+- Steep Learning Curve 
 - Efficiency for Experienced Users
 
 ::::
@@ -124,9 +125,9 @@ CLI
 
 :::
 
-# Statistics, Data Science, & Machine Learning
+# Statistics & Data Science
 
-## Statistics Curricula {.smaller}
+## Statistics & Data Science Curricula {.smaller}
 
 ::: columns
 :::: {.column width="30%"}
@@ -210,49 +211,106 @@ Practice. Journal of Open Source Education, 5(51), 121. [https://doi.org/10.2110
 ::::
 :::
 
-## Tabular Data & Data Frames
 
-## Data Transfromation & Manipulation
-
-# Tidyverse R
-
-```{latex}
-                                          .---> Communicate
-read -> wrangle ---.--> transform ---+-- /
-                   ^                 |            
-                   |                 v
-                   model <-- visualize 
-                   
-```
-
-## Tidyverse Concepts
-
-![](tidydata_1.jpg)
-
-## Tidyverse Concepts
-
-![](tidydata_2.jpg)
-
-## Tidyverse Concepts
-
-![](tidydata_3.jpg)
-
-
-# Processing Pipelines & Scientific Workflows
+# Scientific Data Analysis Workflows
 
 ## Conventional Data Processing 
 
-## Unsupervised/Supervised Machine Learning
+
+::: columns
+:::: {.column width="25%"}
+
+::::: {style="display: flex;"}
+<div>
+
+**SPSS & MS Office**
+
+</br>
+
+**Scripting in </br> Matlab/Python**
+
+</div>
+:::::
+
+::::
+:::: {.column width="70%"}
+
+
+```{mermaid, echo=FALSE, warning=FALSE, message=FALSE, fig.width=12, fig.height=2}
+
+%%{init: {'theme':'forest'}}%%
+
+graph LR
+    A[Raw Data] -->|Import </br> </br> </tab> | B(Excel)
+    B -->|Process and </tab> </br> </br> </tab> Analyze| C(SPSS)
+    C -->|Present| D(PowerPoint)
+    C -->|Document| E(Word)
+    
+
+    classDef green fill:#9f6,stroke:#333,stroke-width:0.5px;
+    classDef orange fill:#f96,stroke:#333,stroke-width:1px;
+    classDef white fill:#fff,stroke:#333,stroke-width:1px; 
+    classDef blue fill:#6699cc,stroke:#333,stroke-width:1px;
+    classDef red fill:#D32737,stroke:#FFF,stroke-width:1.5px;
+    classDef purple fill:#6A2A60,stroke:#FFF,stroke-width:1.5px;
+    classDef royalblue fill:#0021A5,stroke:#FFF,stroke-width:1.5px;
+    
+    class B,C green
+    class A red
+    class E royalblue
+    class D purple
+
+    
+```
+
+
+```{mermaid, echo=FALSE, warning=FALSE, message=FALSE, fig.width=12, fig.height=2}
+
+%%{init: {'theme':'forest'}}%%
+
+graph LR
+
+    A[Raw Data] -->|Import </br> </br> </br> | B(IDE)
+    B -->|Process </br> </br> </tab> | C(IDE)
+    C -->|Analyze| B
+    C -->|Present| D(PowerPoint)
+    C -->|Document| E(Word)
+    
+
+    classDef green fill:#9f6,stroke:#333,stroke-width:0.5px;
+    classDef orange fill:#f96,stroke:#333,stroke-width:1px;
+    classDef white fill:#fff,stroke:#333,stroke-width:1px; 
+    classDef blue fill:#6699cc,stroke:#333,stroke-width:1px;
+    classDef red fill:#D32737,stroke:#FFF,stroke-width:1.5px;
+    classDef purple fill:#6A2A60,stroke:#FFF,stroke-width:1.5px;
+    classDef royalblue fill:#0021A5,stroke:#FFF,stroke-width:1.5px;
+    
+    class B,C green
+    class A red
+    class E royalblue
+    class D purple
+    
+    
+```
+
+
+::::
+:::
 
 
 
-# Open Science Approaches to Scientific Transparency Presents Advantages for Research Training
+
+# Open Science 
+
+Promotion of Scientific Transparency & Reliability  
+Presents Advantages for Research Training
 
 ## Open Science {.smaller}
 
-![](RR-Open2021.jpg){width=80%}
+![](RR-Open2021.jpg){width=75%}
 
 Garrett-Rufin, et al, 2021^[Garrett-Ruffin, S., Hindash, A. C., Kaczkurkin, A. N., Mears, R. P., Morales, S., Paul, K., ... & Keil, A. (2021). Open science in psychophysiology: An overview of challenges and emerging solutions. International Journal of Psychophysiology, 162, 69-78.]
+
 
 :::{.notes}
 Fig. 1. Open science practices affect the research process at multiple levels.
@@ -261,21 +319,48 @@ The process of experimental research, involving steps ranging from hypothesis ge
 :::
 
 
+## Un/Supervised Machine Learning {.smaller}
+
+- Many advantages for dimensionality reduction, clustering, and classification
+
+- **Unsupervised Learning**: No labels are provided, the algorithm tries to learn the structure of the data
+
+- **Supervised Learning**: Labels are provided, the algorithm tries to learn the mapping function from the input to the output labels
+
+- **Reinforcement Learning**: The algorithm learns to perform an action from experience
+
+## Machine Learning Workflow {.smaller}
+
+- Open Science practices can be integrated into the machine learning workflow to ensure reproducibility and transparency
+
+- Most machine learning models are blackbox models, which makes it difficult to understand the model's decision-making process
+
+- Machine Learning models are data-driven, which means that the model's performance is highly dependent on the quality of the data
+
+- Machine Learning model workflows are complex and involve many steps, such as data preprocessing, feature selection, model selection, hyperparameter tuning, and model evaluation
+
+- Machine Learning model frameworks involve declarative/implicit programming style for selection of models and hyperparameters
+
+- However, reproducibility is a major challenge in machine learning because of the blackbox nature of most models, the complexity of the models, and the large number of hyperparameters that need to be tuned
+
+- **Computational Reproducibility** is more essential than ever to ensure the reproducibility of machine learning models
+
+
 
 ## Computational Reproducibility {.smaller}
 
 ::: columns
-:::: {.column width="50%"}
+:::: {.column width="60%"}
 
 ::: {style="display: flex;"}
+
 <div>
-
-Specificity
-
+</br>
+ 
 ```{mermaid, echo=FALSE, warning=FALSE, message=FALSE, fig.width=1.5, fig.height=12}
 
 graph TD;
-    A[coarse] -----> B[granular]
+      A[coarse] ----->|Specificity </tab> </tab> </tab> </tab> </tab> </tab> </tab> </tab> </tab> </tab> </tab>   | B[granular]
 
 
 ```
@@ -292,13 +377,13 @@ graph LR;
 
 ```
 
-+-------------------------------------------------+------------------------------+
-| [**Computing Environment**]{style="color: red;"}|**Workflow**/</br>**Pipeline**|          
-+-------------------------------------------------+------------------------------+
-| **Raw Data** </br> & Code                       | **Analysis Derivatives** </br> - *derived variables* </br> -*stats/plots*|   
-+-------------------------------------------------+---------------------------+
++--------------------------------------------------+------------------------------------------------------+
+| [**Computing Environment**]{style="color: red;"} |[**Workflow**/</br>**Pipeline**]{style="color: gray;"}|
++--------------------------------------------------+------------------------------------------------------+
+| [**Raw Data** </br> & Code]{style="color: gray;"}| [**Analysis Derivatives** </br> - *derived variables* </br> - *stats/plots*]{style="color: gray;"} |
++--------------------------------------------------+------------------------------------------------------+
 
-: {.table .table-bordered .text-white .border .border-white .rounded-3 tbl-colwidths="[50,50]"}
+: {.table .table-bordered .text-white .border .border-white .rounded-3 "}
 :::
 :::
 
@@ -306,12 +391,12 @@ graph LR;
 
 
 ::::
-:::: {.column width="50%"}
+:::: {.column width="40%"}
 
 
 </br> </br> 
 
-#### [Computing Environment]{style="color: red;"}
+
 
 -   [ ] learn how computing works (computing abstractions, operating systems graphics hardware, applications/software, filesystems, etc.)
 -   [ ] learn shell scripting for generalizing tasks across hardware/operating systems
@@ -327,22 +412,24 @@ graph LR;
 ## Computational Reproducibility {.smaller}
 
 ::: columns
-:::: {.column width="50%"}
+:::: {.column width="60%"}
 
 ::: {style="display: flex;"}
-<div>
 
-Specificity
+<div>
+</br>
 
 ```{mermaid, echo=FALSE, warning=FALSE, message=FALSE, fig.width=1.5, fig.height=12}
 
 graph TD;
-    A[coarse] -----> B[granular]
+      A[coarse] ----->|Specificity </tab> </tab> </tab> </tab> </tab> </tab> </tab> </tab> </tab> </tab> </tab>   | B[granular]
 
 
 ```
 
 </div>
+
+</br>
 
 ::: {.middle style="text-align: center"}
 ```{mermaid, echo=FALSE, warning=FALSE, message=FALSE, fig.width=9, fig.height=2}
@@ -354,13 +441,14 @@ graph LR;
 
 ```
 
-+-----------------------------------+---------------------------------+
-| #### **Computing Environment**    | #### **Workflow** / </br> **Pipeline**                                                        |
-+-----------------------------------+---------------------------------+
-| #### **Raw Data** </br> & Code    | ##### **Analysis Derivatives**</br>-*derived variables*</br>-*stats/figures*      
-+-----------------------------------+---------------------------------+
 
-: {.table .table-bordered .text-white .border .border-white .rounded-3 tbl-colwidths="[50,50]"}
++--------------------------------------------------+------------------------------------------------------+
+| [**Computing Environment**]{style="color:gray;"} |[**Workflow**/</br>**Pipeline**]{style="color:  red;"}|
++--------------------------------------------------+------------------------------------------------------+
+| [**Raw Data** </br> & Code]{style="color: gray;"}| [**Analysis Derivatives** </br> - *derived variables* </br> - *stats/plots*]{style="color: gray;"} |   
++--------------------------------------------------+------------------------------------------------------+
+
+: {.table .table-bordered .text-white .dark .border .border-white .rounded-3"}
 :::
 :::
 
@@ -368,13 +456,13 @@ graph LR;
 
 
 ::::
-:::: {.column width="50%"}
+:::: {.column width="40%"}
 
 
 
 </br> </br> 
 
-#### [Workflow/Pipeline]{style="color: red;"}
+
 
 -   [ ] reproducibility/open science
 
@@ -389,17 +477,19 @@ graph LR;
 ## Computational Reproducibility {.smaller}
 
 ::: columns
-:::: {.column width="50%"}
+:::: {.column width="60%"}
 
 ::: {style="display: flex;"}
+
 <div>
 
-Specificity
+</br>
 
 ```{mermaid, echo=FALSE, warning=FALSE, message=FALSE, fig.width=1.5, fig.height=12}
 
-graph TD;
-    A[coarse] -----> B[granular]
+graph TD
+
+      A[coarse] ----->|Specificity </tab> </tab> </tab> </tab> </tab> </tab> </tab> </tab> </tab> </tab> </tab>   | B[granular]
 
 
 ```
@@ -416,13 +506,13 @@ graph LR;
 
 ```
 
-+-----------------------------------+---------------------------------+
-| #### **Computing Environment**    | #### **Workflow** / </br> **Pipeline**                                                        |
-+-----------------------------------+---------------------------------+
-| #### **Raw Data** </br> & Code    | ##### **Analysis Derivatives**</br>-*derived variables*</br>-*stats/figures*      
-+-----------------------------------+---------------------------------+
++--------------------------------------------------+------------------------------------------------------+
+| [**Computing Environment**]{style="color: gray;"}|[**Workflow**/</br>**Pipeline**]{style="color: gray;"}|
++--------------------------------------------------+------------------------------------------------------+
+| [**Raw Data** </br> & Code]{style="color: red;"} | [**Analysis Derivatives** </br> - *derived variables* </br> - *stats/plots*]{style="color: gray;"} |   
++--------------------------------------------------+------------------------------------------------------+
 
-: {.table .table-bordered .text-white .border .border-white .rounded-3 tbl-colwidths="[50,50]"}
+: {.table .table-bordered .text-white .border .border-white .rounded-3 }
 :::
 :::
 
@@ -431,12 +521,12 @@ graph LR;
 
 
 ::::
-:::: {.column width="50%"}
+:::: {.column width="40%"}
 
 
 </br> </br> 
 
-#### [Raw data / code]{style="color: red;"}
+
 
 -   [ ] learn how to use this
 -   [ ] dataframe concepts
@@ -445,23 +535,21 @@ graph LR;
 :::
 
 
-
-
-
 ## Computational Reproducibility {.smaller}
 
 ::: columns
-:::: {.column width="50%"}
+:::: {.column width="60%"}
 
 ::: {style="display: flex;"}
+
 <div>
 
-Specificity
+</br>
 
 ```{mermaid, echo=FALSE, warning=FALSE, message=FALSE, fig.width=1.5, fig.height=12}
+graph TD
 
-graph TD;
-    A[coarse] -----> B[granular]
+      A[coarse] ----->|Specificity </tab> </tab> </tab> </tab> </tab> </tab> </tab> </tab> </tab> </tab> </tab>   | B[granular]
 
 
 ```
@@ -478,13 +566,13 @@ graph LR;
 
 ```
 
-+-----------------------------------+---------------------------------+
-| #### **Computing Environment**    | #### **Workflow** / </br> **Pipeline**                                                       |
-+-----------------------------------+---------------------------------+
-| #### **Raw Data** </br> & Code    | ##### **Analysis Derivatives**</br>-*derived variables*</br>-*stats/figures*      
-+-----------------------------------+---------------------------------+
++---------------------------------------------------+-------------------------------------------------------+
+| [**Computing Environment**]{style="color: gray;"} |[**Workflow**/</br>**Pipeline**]{style="color: gray;"} |
++---------------------------------------------------+-------------------------------------------------------+
+| [**Raw Data** </br> & Code]{style="color: gray;"} | [**Analysis Derivatives** </br> - *derived variables* </br> -*stats/plots*]{style="color: red;"} |   
++---------------------------------------------------+-------------------------------------------------------+
 
-: {.table .table-bordered .text-white .border .border-white .rounded-3 tbl-colwidths="[50,50]"}
+: {.table .table-bordered .text-white .border .border-white .rounded-3 }
 :::
 :::
 
@@ -493,11 +581,11 @@ graph LR;
 
 
 ::::
-:::: {.column width="50%"}
+:::: {.column width="40%"}
 
 </br> </br> 
 
-#### [Derivatives]{style="color: red;"}
+
 
 -   [ ] data wrangling in Python/R
 -   [ ] learn how to graph in Python/R
@@ -672,47 +760,8 @@ graph LR
 ::::
 :::
 
-## R & RStudio Workflow
 
-```{mermaid, echo=FALSE, warning=FALSE, message=FALSE, fig.width=12, fig.height=2}
-
-
-%%{init: {'theme':'forest'}}%%
-
-graph LR
-
-    A[Raw Data] -->|Import </br> </br> </tab> | C[RStudio]
-    
-      subgraph RStudio
-            direction LR
-            B[RStudio]-->|Process</tab> </br> </br> </tab>| C
-            C -->| Analyze</tab> </br> </br> </tab> | B
-            
-
-        end
-
-
-  B -->|Present and </tab> </br> </br> </tab> Document| E[Documents/Slides/Dashboards/Websites]
-  
-    classDef green fill:#9f6,stroke:#333,stroke-width:0.5px;
-    classDef orange fill:#f96,stroke:#333,stroke-width:1px;
-    classDef white fill:#fff,stroke:#333,stroke-width:1px; 
-    classDef blue fill:#6699cc,stroke:#333,stroke-width:1px;
-    classDef red fill:#D32737,stroke:#FFF,stroke-width:1.5px;
-    classDef purple fill:#6A2A60,stroke:#FFF,stroke-width:1.5px;
-    classDef royalblue fill:#0021A5,stroke:#FFF,stroke-width:1.5px;
-    
-    class RStudio white
-    class B,C green
-    class A red
-    class D royalblue
-
-```
-
-
-
-
-## Video Behavior Analysis Workflow  {.smaller}
+## Video Behavior Analysis Workflow {.smaller}
 
 
 
@@ -791,13 +840,574 @@ graph LR
 ::::
 :::
 
+## MNE-BIDS-Pipeline {.smaller}
 
+```{mermaid, echo=FALSE, warning=FALSE, message=FALSE}
+
+%%{init: {'theme':'forest'}}%%
+
+graph LR;
+        subgraph Sensor-level-analysis
+
+       A[Decode time-by-time </br>  using a 'sliding' estimator] --> B[Time-frequency </br> decomposition] 
+       B --> C[Decoding </br> based on </br> common spatial patterns] 
+       C --> D[Noise covariance </br> estimation] 
+       D --> E[Group average </br> at the </br> sensor level] 
+   end
+  
+    subgraph Preprocessing
+
+       l1[Assess </br> channel-wise </br> data quality] --> l2[Estimate </br> head positions] 
+       l2 --> l3[Apply low- and </br> high-pass filters] 
+       l3 --> l4[Temporal regression </br> for artifact removal]
+       l4 --> l5a[Fit ICA] 
+       l5a --> l6a[Find ICA </br> artifacts] 
+       l4 --> l5b[Extract epochs] 
+       l5b --> l7[Apply ICA] 
+       l6a --> l7 --> l8[Remove epochs </br> based on  </br> PTP amplitudes]  
+       l5b --> l6b[Apply SSP] 
+       l4 --> l5c[Compute SSP] 
+       l5c --> l6b[Apply SSP] 
+       l6b --> l8[Remove epochs </br> based on </br> PTP amplitudes] 
+       l8 --> l9[Extract </br> evoked data for </br> each condition] 
+       l9 --> l10[Decode pairs of </br>  conditions based on </br> entire epochs] 
+    end
+    
+
+   
+   %%l0[Raw Data] --> l1
+   %%E --> F[Output </br> Statistical </br> Analysis Pipeline]    
+   
+   classDef green fill:#9f6,stroke:#333,stroke-width:0.5px;
+   classDef orange fill:#f96,stroke:#333,stroke-width:1px;
+   classDef white fill:#fff,stroke:#333,stroke-width:1px;
+   classDef sq stroke:#f66,stroke-width:1px;
+   classDef blue fill:#6699cc,stroke:#333,stroke-width:1px;
+   classDef red fill:#D32737,stroke:#FFF,stroke-width:1.5px;
+     
+   class Preprocessing,Sensor-level-analysis white
+
+```
+
+# MNE-BIDS-pipeline {.smaller}
+
+1.  Prepare your dataset
+2.  Create a configuration file
+3.  Run the pipeline
+
+## Prepare your dataset
+
+MNE-BIDS-Pipeline only works with BIDS-formatted raw data. To find out more about BIDS and how to convert your data to the BIDS format, please see the documentation of MNE-BIDS.
+
+![](https://mne.tools/mne-bids/assets/MNE-BIDS.png)
+
+## Create a configuration file {.smaller}
+
+All parameters of the pipeline are controlled via a configuration file. Create a template configuration file by running the following command:
+
+`mne_bids_pipeline --create-config=/path/to/custom_config.py`
+
+```{python, eval=FALSE}
+import numpy as np
+
+study_name = "ds000247"
+bids_root = f"~/mne_data/{study_name}"
+deriv_root = f"~/mne_data/derivatives/mne-bids-pipeline/{study_name}"
+
+subjects = ["0002"]
+sessions = ["01"]
+task = "rest"
+task_is_rest = True
+
+crop_runs = (0, 100)  # to speed up computations
+
+ch_types = ["meg"]
+spatial_filter = "ssp"
+
+l_freq = 1.0
+h_freq = 40.0
+
+rest_epochs_duration = 10
+rest_epochs_overlap = 0
+
+epochs_tmin = 0
+baseline = None
+
+```
+
+-   [from example ds000247](https://mne.tools/mne-bids-pipeline/stable/examples/ds000247.html#configuration)
+
+## Run the pipeline {.smaller}
+
+To run the full pipeline, simply call:
+
+`mne_bids_pipeline --config=/path/to/your/custom_config.py`
+
+To run part of the pipeline, you can specify the stage you want to run:
+
+-   Run only the preprocessing steps:
+    -   `mne_bids_pipeline --config=/path/to/your/custom_config.py --steps=preprocessing`
+
+## Optional Parts of the pipeline {.smaller}
+
+-   Run only the sensor-level processing steps:
+    -   `mne_bids_pipeline --config=/path/to/your/custom_config.py --steps=sensor`
+-   Run only the source-level (inverse solution) processing steps:
+    -   `mne_bids_pipeline --config=/path/to/your/custom_config.py --steps=source`
+-   (Re-)run ICA:
+    -   `mne_bids_pipeline --config=/path/to/your/custom_config.py --steps=preprocessing/ica`
+-   You can also run multiple steps with one command by separating different steps by a comma. For example, to run preprocessing and sensor-level processing steps using a single command, do:
+    -   `mne_bids_pipeline --config=/path/to/your/custom_config.py --steps=preprocessing,sensor`
+
+# Running the pipeline on HiPerGator {.smaller}
+
+## Log on to HiPerGator terminal/shell {.smaller}
+
+Connect to UF Research Computing HPG3 Cluster from terminal on macOS
+
+Type the following command in the terminal:
+
+`ssh` *urgatoruser*`@hpg.rc.ufl.edu`
+
+Then, follow the prompts to enter your password and Duo two-factor authentication.
+
+**Your password will not be displayed as you type it.** Then, your terminal should look like this:
+
+``` bash
+ssh urgatoruser@hpg.rc.ufl.edu
+Password: xxxxxxxx
+Duo two-factor login for urgatoruser@ufl.edu
+
+Enter a passcode or select one of the following options:
+
+ 1. Duo Push to XXX-XXX-1809
+ 2. Phone call to XXX-XXX-1809
+
+Passcode or option (1-2): 1
+```
+
+Works through the UF Single-sign on similar to for Canvas and gatormail.
+
+## Start a compute node on HiPerGator {.smaller}
+
+-   single node 2 CPU core job with 2gb of RAM for 90 minutes can be started with the following command
+
+``` bash
+srun --account=psb4934 --qos=psb4934 --ntasks=1 --cpus-per-task=2 --mem=2gb -t 90 --pty bash -i
+```
+
+`[mygatoruser@login1 ~]$ srun --pty -p hpg2-compute -n 1 -N 1 -t 90 --mem=2gb /bin/bash`
+
+-   single node 4 CPU core job with 28gb of RAM for 120 minutes can be started with the following command
+
+``` bash
+srun --account=psb4934 --qos=psb4934 --ntasks=1 --cpus-per-task=4 --mem=28gb -t 60 --pty bash -i
+```
+
+## Check that your job is running
+
+Now you are on the compute node. You can check the hostname and the node list with the following commands:
+
+``` bash
+echo "Hello from $(hostname)"
+```
+
+`Hello from c0711a-s6.ufhpc`
+
+``` bash
+echo $SLURM_JOB_NODELIST
+```
+
+`c0711a-s6`
+
+## Activate: Conda-env for pipeline {.smaller}
+
+Navigate to group storage on Blue drive then activate conda environment to have access to pipeline
+
+``` bash
+cd /blue/psb4934/share/mears/misophonia/miso-project-pipeline
+
+module load conda
+conda activate mne_v1_6
+```
+
+
+
+
+## R & RStudio Workflow
+
+```{mermaid, echo=FALSE, warning=FALSE, message=FALSE, fig.width=12, fig.height=2}
+
+
+%%{init: {'theme':'forest'}}%%
+
+graph LR
+
+    A[Raw Data] -->|Import </br> </br> </tab> | C[RStudio]
+    
+      subgraph RStudio
+            direction LR
+            B[RStudio]-->|Process</tab> </br> </br> </tab>| C
+            C -->| Analyze</tab> </br> </br> </tab> | B
+            
+
+        end
+
+
+  B -->|Present and </tab> </br> </br> </tab> Document| E[Documents/Slides/Dashboards/Websites]
+  
+    classDef green fill:#9f6,stroke:#333,stroke-width:0.5px;
+    classDef orange fill:#f96,stroke:#333,stroke-width:1px;
+    classDef white fill:#fff,stroke:#333,stroke-width:1px; 
+    classDef blue fill:#6699cc,stroke:#333,stroke-width:1px;
+    classDef red fill:#D32737,stroke:#FFF,stroke-width:1.5px;
+    classDef purple fill:#6A2A60,stroke:#FFF,stroke-width:1.5px;
+    classDef royalblue fill:#0021A5,stroke:#FFF,stroke-width:1.5px;
+    
+    class RStudio white
+    class B,C green
+    class A red
+    class D royalblue
+
+```
+
+# Open Science: Finding and Sharing Analysis Code
+
+## Version Control & Open Software
+
+
+## Why use Git?
+
+- Remote repo: accessed & <br> updated anytime
+- Solutions for continuous <br> merging of sets of changes
+
+![](team-git.png){.absolute top=0 right=-10  height="450"} 
+
+::: aside
+> Perez-Riverol, *et al.* (2016). Ten Simple Rules for Taking Advantage of Git & GitHub. *PLoS computational biology*, [12(7), e1004947.](https://doi.org/10.1371/journal.pcbi.1004947)
+::: 
+
+
+## Key Feature of Git: Timeline Control 
+
+![](reachability-example.png)
+
+[Example from *Think Like (a) Git: A Guide for the Perplexed*](https://think-like-a-git.net/sections/graph-theory/reachability.html)
+
+::: {.notes}
+
+You can think of this graph as a set of three parallel universes with time flowing from left to right, so that A is the beginning of recorded history. (The arrow represents the "follows" or "is subsequent to" relationship, so you might say that "B follows A".)
+
+:::
+
+## Key Feature of Git: Timeline Control 
+
+![](reachability-exampleE.jpg)
+
+
+## Key Feature of Git: Timeline Control 
+
+![](reachability-exampleK.jpg)
+
+::: {.notes}
+
+- If you start from E, the history you'll see is A, B, C, D, E.
+
+:::
+
+## Key Feature of Git: Timeline Control 
+
+![](reachability-exampleH.jpg)
+
+
+::: {.notes}
+- If you start from K, the history you'll see is A, B, C, I, J, K.
+But the really important thing about this is that no matter which node you start with, some **parts of the graph will be unreachable** to you.  
+
+*turn it around*: **Depending** on where you start, you can **reach parts** of the graph that you couldn't get to otherwise.  
+
+:::
+
+
+## Key Feature of Git: Timeline Control 
+
+![](graph.png)
+
+## {background-image="Git-4yrs-up.png" background-size="cover"}
+
+
+::: {.notes}
+[Git-4yrs-up 1h 31m](https://youtu.be/1ffBJ4sVUb4?t=5460)
+:::
+
+
+## Free Software on GitHub for Psychology & Neuroscience {.smaller}
+
+::: {.columns}
+:::: {.column width="30%"}
+
+**Python Frameworks**
+
+- [Anaconda](https://github.com/ContinuumIO)
+- [PyPi](https://pypi.org/)[**(Python Package Index)**]{style="font-size:75%"}
+- [Jupyter](https://github.com/jupyter/)/[Pyodide](https://github.com/pyodide/pyodide)
+- [Numpy](https://github.com/numpy/numpy) / [Scipy](https://github.com/scipy/scipy)
+- [Pandas](https://github.com/pandas-dev/pandas)/[Statsmodels](https://github.com/statsmodels/statsmodels)
+- [Matplotlib](https://github.com/matplotlib/matplotlib)/[Seaborn](https://github.com/seaborn)
+- [Keras](https://github.com/keras-team/keras)/[TensorFlow](https://github.com/tensorflow/tensorflow)
+- [PyTorch](https://github.com/pytorch/pytorch)
+- [Scikit-learn](https://github.com/scikit-learn/scikit-learn)
+
+
+::::
+
+:::: {.column width="40%"}
+**R**
+
+- [Tidyverse R](https://github.com/tidyverse)
+- [ROpenSci](https://github.com/ropensci)
+- CRAN Task Views </br> [**(Comprehensive R Archive Network)**]{style="font-size:75%"}
+   - [Psychometrics](CRAN Task View: Psychometric Models and Methods)
+   - [Bayesian Inference](https://cran.r-project.org/web/views/Bayesian.html)
+   - [Reproducible Research](https://cran.r-project.org/web/views/ReproducibleResearch.html)
+   - [Natural Language Processing](https://cran.r-project.org/web/views/NaturalLanguageProcessing.html)
+   - [Teaching Statistics](https://cran.r-project.org/web/views/TeachingStatistics.html)
+
+   
+::::
+
+:::: {.column width="30%"}
+**Psychology & Neuroscience**  
+
+Python  
+
+- [MNE](https://github.com/mne-tools)
+- [PsychoPy](https://www.psychopy.org/)
+- [DeepLabCut](https://github.com/DeepLabCut/DeepLabCut)
+- [Movement](https://github.com/neuroinformatics-unit/movement)
+
+R  
+
+- [DLCAnalyzer](https://github.com/ETHZ-INS/DLCAnalyzer)
+- [qualtRics](https://github.com/ropensci/qualtRics)
+
+::::
+
+:::
+
+:::{.notes}
+
+
+:::
+
+# Data Science Skills Essential to Machine Learning
+
+## SPSS Transformation & Manipulation {.smaller}
+
+:::{.fragment .aside}
+ </br> </tab> </br>  1- Select "variables-to-cases" </br> 2- Select "one" var to restructure </br> 3- Select ID var, 4 vars to transpose, & 1 var to not change </br> 4- Select "one" var to create 
+
+:::
+
+
+::: {.r-stack}
+![](spss_restr1-2.png){.fragment .absolute top=50 left=0 width=90%}
+![](spss_restr3-4.png){.fragment .absolute top=100 left=40 width=90%}
+
+
+:::
+
+
+:::{.notes}
+
+
+- Cleophas, T. J., Zwinderman, A. H., Cleophas, T. J., & Zwinderman, A. H. (2020). Restructure Data Wizard for Data Classified the Wrong Way (20 Patients). *Machine Learning in Medicine–A Complete Overview*, 117-121.
+
+- Ravand, H. (2019). Item response theory using hierarchical generalized linear models. *Practical Assessment, Research, and Evaluation, 20(1)*, 7.
+
+- Field, A. (2013). Chapter 20 Multilevel linear models. Discovering statistics using IBM SPSS statistics: Sage Publications Ltd.
+
+:::
+
+
+
+## SPSS Transformation & Manipulation {.smaller}
+
+:::{.fragment .aside}
+  </br>   </tab>  </br> 5- Select "Sequential Numbers" and name index var as "Time", </br> 6- Select "Options" </br> 7- Select "restructure and/or syntax" and "Finish"
+
+:::
+
+![](spss_restr1-2.png){.absolute top=50 left=0 width=90%}
+![](spss_restr3-4.png){.absolute top=100 left=40 width=90%}
+
+::: {.r-stack}
+
+![](spss_restr5-6.png){.fragment .absolute top=150 left=80 width=90%}
+
+![](spss_restr7.png){.fragment .absolute top=200 right=-20 width=45%}
+
+:::
+
+
+:::{.notes}
+
+
+- Cleophas, T. J., Zwinderman, A. H., Cleophas, T. J., & Zwinderman, A. H. (2020). Restructure Data Wizard for Data Classified the Wrong Way (20 Patients). *Machine Learning in Medicine–A Complete Overview*, 117-121.
+
+- Ravand, H. (2019). Item response theory using hierarchical generalized linear models. *Practical Assessment, Research, and Evaluation, 20(1)*, 7.
+
+- Field, A. (2013). Chapter 20 Multilevel linear models. Discovering statistics using IBM SPSS statistics: Sage Publications Ltd.
+
+:::
+
+
+
+
+## Transformation & Manipulation in R {.smaller}
+
+```{r}
+library(tidyverse)
+library(haven)
+
+honeymoon_period <- haven::read_sav("honeymoon_period.sav")
+
+honeymoon_period2 <- head(honeymoon_period,5)
+knitr::kable(honeymoon_period2)
+
+# knitr::kable(honeymoon_period2, col.names = gsub("atisfaction", "",names(honeymoon_period2)))
+
+```
+
+```{r, echo=TRUE}
+#| code-line-numbers: "2|3-4"
+ 
+honeymoon_period_longer <- honeymoon_period %>% 
+  pivot_longer(cols = starts_with("Satisfaction_"), 
+               names_to = "Life_satisfaction", 
+               values_to = "Time")
+```
+
+```{r}
+knitr::kable(honeymoon_period_longer)
+```
+
+
+## Tabular Data Frames & Cognitive Load {.smaller}
+
+
+## {.center}
+
+> Programming for humans not machines 
+>  
+> - Hal Abelson
+
+
+# Tidyverse R
+
+```{latex}
+                                          .---> Communicate
+read -> wrangle ---.--> transform ---+-- /
+                   ^                 |            
+                   |                 v
+                   model <-- visualize 
+                   
+```
+
+## Tidyverse Concepts
+
+![](tidydata_1.jpg)
+
+## Tidyverse Concepts
+
+![](tidydata_2.jpg)
+
+## Tidyverse Concepts
+
+![](tidydata_3.jpg)
+
+## Tidyverse Concepts
+
+- Many operations are essentially the same as SQL
+   - Algorithms are based on set theory, relational algebra, and relational calculus
+   - SQL is a declarative language, R and tidyverse R is an imperative/functional language
+- Methods for data wrangling are more flexible and powerful than SQL
+- Similar to SQL but without the focus on explicit predefined referencing and contraints of database design
+- Data Frames are the primary data structure
+
+## Tabular Data in Python & Matlab {.smaller}
+
+- Pandas in Python
+   - Data Frames
+      - Data Wrangling
+         - `read_csv()`
+         - `sort_values()`
+         - `sort_index()`
+         - `reset_index()`
+         - `set_index()`
+         - `loc[]`
+         - `iloc[]`
+         - `at[]`
+         - `iat[]`
+         - `isin()`
+         - `query()`
+         - `melt()`
+         - `stack()`
+         - `unstack()`
+
+   - Split-Apply-Combine
+         - `groupby()`
+         - `pivot_table()`
+         
+   - Column-based computation
+         - `eval()`
+         - `assign()`
+         - `pipe()`
+         - `apply()`
+         - `applymap()`
+         - `map()`
+         
+   - DataFrame Joins
+         - `merge()`
+         - `join()`
+         - `concat()`
+         
+- Data Tables in Matlab
+   - Data Tables
+   - Split-Apply-Combine
+   - Column-based computation
+   - Table Joins
+
+:::{.notes}
+
+- `cut()`, `qcut()`, `to_datetime()`, `to_numeric()`,
+- `to_timedelta()`, `str()`, `dt()`, `cat()`, `crosstab()`, `corr()`
+- `cov()`, `rolling()`, `expanding()`, `ewm()`, `shift()`, `diff()`,
+- `pct_change()`, `cumsum()`, `cumprod()`, `cummax()`, `cummin()`, `resample()`, 
+- `asfreq()`, `interpolate()`, `fillna()`, `dropna()`, `replace()`,
+
+
+:::
 
 # How to Develop Coding Capabilities
 
 ## Start & Practice
 
 ## UFRC Courses & Community Workshops
+
+- ![https://help.rc.ufl.edu/doc/UFRC_Help_and_Documentation](https://help.rc.ufl.edu/doc/UFRC_Help_and_Documentation)
+- ![https://practicumai.org/](https://practicumai.org/)
+- ![Carpentries: R for Reproducible Scientific Analysis](https://swcarpentry.github.io/r-novice-gapminder/)
+- ![Carpentries: Functional Neuroimaging Analysis in Python](https://carpentries-incubator.github.io/SDC-BIDS-fMRI/)
+- ![]()
+
+- ![DataCamp: Reconstructing Brain MRI Images Using Deep Learning (Convolutional Autoencoder)](https://www.datacamp.com/tutorial/reconstructing-brain-images-deep-learning)
+
+- ![]()
+- ![]()
+- ![DataCamp: Introduction to Deep Learning with Keras](https://www.datacamp.com/courses/introduction-to-deep-learning-with-keras)
+- ![DataCamp: How to Learn Deep Learning in 2024 - A Complete Guide](https://www.datacamp.com/blog/how-to-learn-deep-learning)
+
 
 ## Books, Online Courses, Tutorials
 
@@ -833,15 +1443,87 @@ White, J., Hays, S., Fu, Q., Spencer-Smith, J., & Schmidt, D. C. (2023). Chatgpt
 
 :::
 
-## Code Review & Pair Programming
+## DataCamp, Coursera, Udemy, LinkedIn Learning
+
+## ChatGPT Coding Prompts {.smaller}
+
+:::{.columns}
+::::{.column width="33%"}
+
+**General coding workflows**  
+
+- Code debugging 
+- Code explanation 
+- Code optimization 
+- Code simplification 
+- Code translation 
+- Code quality and testing 
+   - Compare function speeds
+   - Write unit tests
+
+::::
+::::{.column width="33%"}
+
+**Analysis workflows**  
+
+- Python/R analysis 
+   - Data generation/cleaning 
+   - Data analysis workflow in pandas/tidyverse R
+   - Data Aggregation
+   - Data Merging
+
+**Data visualization** 
+
+- Data visualization in Python/R
+   - Creating plots
+   - Annotating/formatting 
+   - Changing plot themes
+
+
+::::
+::::{.column width="33%"}
+
+**Machine learning workflows**  
+
+- General machine learning 
+- Python/R machine learning 
+
+  
+**Time series analysis**  
+
+- Python/R time series analysis 
+  
+**Natural language processing workflows**  
+  
+**Conceptual & career oriented prompts**
+
+::::
+:::
+
+
+## Code Review & Collaboration
 
 ## Hackathons & Competitions
-
-## Collaborate
 
 ## Share & Teach
 
 
+## Transformation & Manipulation in R {.smaller}
+
+```{r}
+
+Cosmetic_Surgery <- haven::read_sav("Cosmetic Surgery.sav")
+head(Cosmetic_Surgery)
+
+
+Cosmetic_Surgery <- Cosmetic_Surgery %>% 
+  mutate(BDI_Centered = BDI - mean(BDI, na.rm = TRUE)) %>% 
+  group_by(Clinic) %>% 
+  mutate(BDI_Group_Centered = BDI - mean(BDI, na.rm = TRUE))
+
+head(Cosmetic_Surgery)
+
+```
 
 
 
