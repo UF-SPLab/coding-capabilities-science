@@ -459,16 +459,16 @@ but you don’t reply to email.</p>
 </thead>
 <tbody>
 <tr class="odd">
-<td>High Customization</td>
-<td>Increased User Knowledge Dependence</td>
+<td>Graphical Resource Independence</td>
+<td>Explicit Command Requirement</td>
 </tr>
 <tr class="even">
-<td>High Composability</td>
+<td>High Customization</td>
 <td>Reduced Usability for Novices</td>
 </tr>
 <tr class="odd">
-<td>Graphical Resource Independence</td>
-<td>Explicit Command Requirement</td>
+<td>High Composability</td>
+<td>Increased User Knowledge Dependence</td>
 </tr>
 <tr class="even">
 <td>Integration &amp; Modularity</td>
@@ -485,10 +485,29 @@ but you don’t reply to email.</p>
 </tbody>
 </table>
 </section>
+<section class="slide level2">
+
+<aside class="notes">
+<ol type="1">
+<li>GUI is more accessible to novices (provides hints and guidance to users), but CLI requires explicit commands and user knowledge.</li>
+<li></li>
+</ol>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
 <section id="code-libraries-apis" class="slide level2 smaller">
 <h2>Code Libraries &amp; APIs</h2>
 <ul>
-<li><strong>Code Libraries</strong>: collections of pre-written code that can be used to perform tasks.</li>
+<li><strong>Code Libraries</strong>: collections of pre-written code that can be used to perform tasks. Well designed code is reusable, modular, and efficient, and APIs are the interfaces that allow code libraries to be used.</li>
 <li><strong>APIs</strong> (Application Programming Interfaces): rules &amp; protocols allowing users or other applications to interact with a software application.</li>
 </ul>
 <div class="columns">
@@ -497,16 +516,16 @@ but you don’t reply to email.</p>
 <ul>
 <li>Intuitiveness and Accessibility</li>
 <li>Limited to Pre-defined Options (i.e., graphical elements)</li>
-<li>API is rigidly structured &amp; hidden</li>
-<li>Event-Driven Programming</li>
+<li>API (if it’s not hidden) is constrained by graphical elements and rigidly structured</li>
+<li>Event-Driven Programming (i.e., often a complex sequence and/or combination of user actions trigger code execution - clicks, drags, etc.)</li>
 </ul>
 </div><div class="column" style="width:&quot;50%;">
 <h4 id="cli-command-line-interface">CLI (Command Line Interface)</h4>
 <ul>
+<li>Steep Learning Curve (..but intuition/accessibility improving)</li>
 <li>High Flexibility and Control</li>
-<li>Scripting and Automation</li>
-<li>Steep Learning Curve</li>
-<li>Efficiency for Experienced Users</li>
+<li>Scripting, Customization, and Automation (APIs can be directly called in scripts)</li>
+<li>Efficiency for Experienced Users (i.e., while GUI is linearly scaled, improvements in productivity can scale exponentially with CLI)</li>
 </ul>
 </div>
 </div>
@@ -537,6 +556,10 @@ but you don’t reply to email.</p>
           display:block!important;
       }</style></aside>
 </section>
+<section id="section" class="slide level2 center">
+<h2></h2>
+<p><img data-src="python.png"> XKCD<sup>1</sup>(https://xkcd.com/353/)</p>
+<aside><ol class="aside-footnotes"><li id="fn1"><p>https://xkcd.com/353/</p></li></ol></aside></section>
 <section id="data-science-activities" class="slide level2 smaller">
 <h2>Data Science Activities</h2>
 <div class="columns">
@@ -556,7 +579,7 @@ but you don’t reply to email.</p>
 <p>Donoghue T, Voytek B, &amp; Ellis S (2022). Course Materials for Data Science in Practice. Journal of Open Source Education, 5(51), 121. <a href="https://doi.org/10.21105/jose.00121">https://doi.org/10.21105/jose.00121</a></p>
 </div>
 </div>
-<aside><ol class="aside-footnotes"><li id="fn1"><p>Donoho, D. (2017). 50 years of data science. Journal of<br> Computational and Graphical Statistics, 26(4), 745-766.<br> <a href="https://doi.org/10.1080/10618600.2017.1384734">https://doi.org/10.1080/10618600.2017.1384734</a></p></li></ol></aside></section>
+<aside><ol class="aside-footnotes"><li id="fn2"><p>Donoho, D. (2017). 50 years of data science. Journal of<br> Computational and Graphical Statistics, 26(4), 745-766.<br> <a href="https://doi.org/10.1080/10618600.2017.1384734">https://doi.org/10.1080/10618600.2017.1384734</a></p></li></ol></aside></section>
 <section id="statistics-data-science-curricula" class="slide level2 smaller">
 <h2>Statistics &amp; Data Science Curricula</h2>
 <div class="columns">
@@ -598,7 +621,7 @@ but you don’t reply to email.</p>
 <p><em>From Hardin et al.,2015,</em><sup>1</sup></p>
 </div>
 </div>
-<aside><ol class="aside-footnotes"><li id="fn2"><p>Hardin, J., Hoerl, R., Horton, N. J., Nolan, D., Baumer, B., Hall-Holt, O., … &amp; Ward, M. (2015). Data science in statistics curricula: Preparing students to “think with data”. The American Statistician, 69(4), 343-353. <a href="http://dx.doi.org/10.1080/00031305.2015.1077729">http://dx.doi.org/10.1080/00031305.2015.1077729</a></p></li></ol></aside></section>
+<aside><ol class="aside-footnotes"><li id="fn3"><p>Hardin, J., Hoerl, R., Horton, N. J., Nolan, D., Baumer, B., Hall-Holt, O., … &amp; Ward, M. (2015). Data science in statistics curricula: Preparing students to “think with data”. The American Statistician, 69(4), 343-353. <a href="http://dx.doi.org/10.1080/00031305.2015.1077729">http://dx.doi.org/10.1080/00031305.2015.1077729</a></p></li></ol></aside></section>
 <section id="conventional-data-analysis-workflows" class="slide level2">
 <h2>Conventional Data Analysis Workflows</h2>
 <div class="columns">
@@ -704,7 +727,7 @@ Presents Advantages for Research Training</p>
           overflow: hidden!important;
           display:block!important;
       }</style></aside>
-<aside><ol class="aside-footnotes"><li id="fn3"><p>Garrett-Ruffin, S., Hindash, A. C., Kaczkurkin, A. N., Mears, R. P., Morales, S., Paul, K., … &amp; Keil, A. (2021). Open science in psychophysiology: An overview of challenges and emerging solutions. International Journal of Psychophysiology, 162, 69-78.</p></li></ol></aside></section>
+<aside><ol class="aside-footnotes"><li id="fn4"><p>Garrett-Ruffin, S., Hindash, A. C., Kaczkurkin, A. N., Mears, R. P., Morales, S., Paul, K., … &amp; Keil, A. (2021). Open science in psychophysiology: An overview of challenges and emerging solutions. International Journal of Psychophysiology, 162, 69-78.</p></li></ol></aside></section>
 <section id="unsupervised-machine-learning" class="slide level2 smaller">
 <h2>Un/Supervised Machine Learning</h2>
 <ul>
@@ -1226,7 +1249,7 @@ graph LR
 </div>
 </div>
 </section>
-<section id="section" class="slide level2">
+<section id="section-1" class="slide level2">
 <h2></h2>
 <div class="columns">
 <div class="column" style="width:50%;">
@@ -1315,125 +1338,21 @@ graph LR;
 <section id="run-the-pipeline" class="slide level2 smaller">
 <h2>Run the pipeline</h2>
 <p>To run the full pipeline, simply call:</p>
-<p><code>mne_bids_pipeline --config=/path/to/your/custom_config.py</code></p>
-<p>To run part of the pipeline, you can specify the stage you want to run:</p>
-<ul>
-<li>Run only the preprocessing steps:
-<ul>
-<li><code>mne_bids_pipeline --config=/path/to/your/custom_config.py --steps=preprocessing</code></li>
-</ul></li>
-</ul>
+<p><code>mne_bids_pipeline --config=/path/to/custom_config.py</code></p>
+<p>To run part of the pipeline, you can specify the stage you want to run.</p>
+<p>Run only the preprocessing steps:</p>
+<p><code>mne_bids_pipeline --config=/path/to/custom_config.py --steps=preprocessing</code></p>
 </section>
 <section id="optional-parts-of-the-pipeline" class="slide level2 smaller">
 <h2>Optional Parts of the pipeline</h2>
-<ul>
-<li>Run only the sensor-level processing steps:
-<ul>
-<li><code>mne_bids_pipeline --config=/path/to/your/custom_config.py --steps=sensor</code></li>
-</ul></li>
-<li>Run only the source-level (inverse solution) processing steps:
-<ul>
-<li><code>mne_bids_pipeline --config=/path/to/your/custom_config.py --steps=source</code></li>
-</ul></li>
-<li>(Re-)run ICA:
-<ul>
-<li><code>mne_bids_pipeline --config=/path/to/your/custom_config.py --steps=preprocessing/ica</code></li>
-</ul></li>
-<li>You can also run multiple steps with one command by separating different steps by a comma. For example, to run preprocessing and sensor-level processing steps using a single command, do:
-<ul>
-<li><code>mne_bids_pipeline --config=/path/to/your/custom_config.py --steps=preprocessing,sensor</code></li>
-</ul></li>
-</ul>
-</section>
-<section id="running-the-pipeline-on-hipergator" class="slide level2 smaller">
-<h2>Running the pipeline on HiPerGator</h2>
-<p>Connect to UF Research Computing HPG3 Cluster from terminal on macOS</p>
-<p>Type the following command in the terminal:</p>
-<p><code>ssh</code> <em>urgatoruser</em><code>@hpg.rc.ufl.edu</code></p>
-<p>Then, follow the prompts to enter your password and Duo two-factor authentication.</p>
-<p><strong>Your password will not be displayed as you type it.</strong> Then, your terminal should look like this:</p>
-<div class="sourceCode" id="cb1"><pre class="sourceCode numberSource bash number-lines code-with-copy"><code class="sourceCode bash"><span id="cb1-1"><a href="#cb1-1"></a><span class="fu">ssh</span> urgatoruser@hpg.rc.ufl.edu</span>
-<span id="cb1-2"><a href="#cb1-2"></a><span class="ex">Password:</span> xxxxxxxx</span>
-<span id="cb1-3"><a href="#cb1-3"></a><span class="ex">Duo</span> two-factor login for urgatoruser@ufl.edu</span>
-<span id="cb1-4"><a href="#cb1-4"></a></span>
-<span id="cb1-5"><a href="#cb1-5"></a><span class="ex">Enter</span> a passcode or select one of the following options:</span>
-<span id="cb1-6"><a href="#cb1-6"></a></span>
-<span id="cb1-7"><a href="#cb1-7"></a> <span class="ex">1.</span> Duo Push to XXX-XXX-1809</span>
-<span id="cb1-8"><a href="#cb1-8"></a> <span class="ex">2.</span> Phone call to XXX-XXX-1809</span>
-<span id="cb1-9"><a href="#cb1-9"></a></span>
-<span id="cb1-10"><a href="#cb1-10"></a><span class="ex">Passcode</span> or option <span class="er">(</span><span class="ex">1-2</span><span class="kw">)</span><span class="bu">:</span> 1</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<p>Works through the UF Single-sign on similar to for Canvas and gatormail.</p>
-</section>
-<section id="start-a-compute-node-on-hipergator" class="slide level2 smaller">
-<h2>Start a compute node on HiPerGator</h2>
-<ul>
-<li>single node 2 CPU core job with 2gb of RAM for 90 minutes can be started with the following command</li>
-</ul>
-<div class="sourceCode" id="cb2"><pre class="sourceCode numberSource bash number-lines code-with-copy"><code class="sourceCode bash"><span id="cb2-1"><a href="#cb2-1"></a><span class="ex">srun</span> <span class="at">--account</span><span class="op">=</span>psb4934 <span class="at">--qos</span><span class="op">=</span>psb4934 <span class="at">--ntasks</span><span class="op">=</span>1 <span class="at">--cpus-per-task</span><span class="op">=</span>2 <span class="at">--mem</span><span class="op">=</span>2gb <span class="at">-t</span> 90 <span class="at">--pty</span> bash <span class="at">-i</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<p><code>[mygatoruser@login1 ~]$ srun --pty -p hpg2-compute -n 1 -N 1 -t 90 --mem=2gb /bin/bash</code></p>
-<ul>
-<li>single node 4 CPU core job with 28gb of RAM for 120 minutes can be started with the following command</li>
-</ul>
-<div class="sourceCode" id="cb3"><pre class="sourceCode numberSource bash number-lines code-with-copy"><code class="sourceCode bash"><span id="cb3-1"><a href="#cb3-1"></a><span class="ex">srun</span> <span class="at">--account</span><span class="op">=</span>psb4934 <span class="at">--qos</span><span class="op">=</span>psb4934 <span class="at">--ntasks</span><span class="op">=</span>1 <span class="at">--cpus-per-task</span><span class="op">=</span>4 <span class="at">--mem</span><span class="op">=</span>28gb <span class="at">-t</span> 60 <span class="at">--pty</span> bash <span class="at">-i</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</section>
-<section id="check-that-your-job-is-running" class="slide level2">
-<h2>Check that your job is running</h2>
-<p>Now you are on the compute node. You can check the hostname and the node list with the following commands:</p>
-<div class="sourceCode" id="cb4"><pre class="sourceCode numberSource bash number-lines code-with-copy"><code class="sourceCode bash"><span id="cb4-1"><a href="#cb4-1"></a><span class="bu">echo</span> <span class="st">"Hello from </span><span class="va">$(</span><span class="fu">hostname</span><span class="va">)</span><span class="st">"</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<p><code>Hello from c0711a-s6.ufhpc</code></p>
-<div class="sourceCode" id="cb5"><pre class="sourceCode numberSource bash number-lines code-with-copy"><code class="sourceCode bash"><span id="cb5-1"><a href="#cb5-1"></a><span class="bu">echo</span> <span class="va">$SLURM_JOB_NODELIST</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<p><code>c0711a-s6</code></p>
-</section>
-<section id="activate-conda-env-for-pipeline" class="slide level2 smaller">
-<h2>Activate: Conda-env for pipeline</h2>
-<p>Navigate to group storage on Blue drive then activate conda environment to have access to pipeline</p>
-<div class="sourceCode" id="cb6"><pre class="sourceCode numberSource bash number-lines code-with-copy"><code class="sourceCode bash"><span id="cb6-1"><a href="#cb6-1"></a><span class="bu">cd</span> /blue/psb4934/share/mears/misophonia/miso-project-pipeline</span>
-<span id="cb6-2"><a href="#cb6-2"></a></span>
-<span id="cb6-3"><a href="#cb6-3"></a><span class="ex">module</span> load conda</span>
-<span id="cb6-4"><a href="#cb6-4"></a><span class="ex">conda</span> activate mne_v1_6</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</section>
-<section id="r-rstudio-workflow" class="slide level2">
-<h2>R &amp; RStudio Workflow</h2>
-<div class="cell" data-reveal="true">
-<div class="cell-output-display">
-<div>
-<div>
-<pre class="mermaid mermaid-js">
-%%{init: {'theme':'forest'}}%%
-
-graph LR
-
-    A[Raw Data] --&gt;|Import &lt;/br&gt; &lt;/br&gt; &lt;/tab&gt; | C[RStudio]
-    
-      subgraph RStudio
-            direction LR
-            B[RStudio]--&gt;|Process&lt;/tab&gt; &lt;/br&gt; &lt;/br&gt; &lt;/tab&gt;| C
-            C --&gt;| Analyze&lt;/tab&gt; &lt;/br&gt; &lt;/br&gt; &lt;/tab&gt; | B
-            
-
-        end
-
-
-  B --&gt;|Present and &lt;/tab&gt; &lt;/br&gt; &lt;/br&gt; &lt;/tab&gt; Document| E[Documents/Slides/Dashboards/Websites]
-  
-    classDef green fill:#9f6,stroke:#333,stroke-width:0.5px;
-    classDef orange fill:#f96,stroke:#333,stroke-width:1px;
-    classDef white fill:#fff,stroke:#333,stroke-width:1px; 
-    classDef blue fill:#6699cc,stroke:#333,stroke-width:1px;
-    classDef red fill:#D32737,stroke:#FFF,stroke-width:1.5px;
-    classDef purple fill:#6A2A60,stroke:#FFF,stroke-width:1.5px;
-    classDef royalblue fill:#0021A5,stroke:#FFF,stroke-width:1.5px;
-    
-    class RStudio white
-    class B,C green
-    class A red
-    class D royalblue
-
-</pre>
-</div>
-</div>
-</div>
-</div>
+<p>Run only the sensor-level processing steps:</p>
+<p><code>mne_bids_pipeline --config=custom_config.py --steps=sensor</code></p>
+<p>Run only the source-level (inverse solution) processing steps:</p>
+<p><code>mne_bids_pipeline --config=custom_config.py --steps=source</code></p>
+<p>(Re-)run ICA:</p>
+<p><code>mne_bids_pipeline --config=custom_config.py --steps=preprocessing/ica</code></p>
+<p>You can also run multiple steps with one command by separating different steps by a comma. For example, to run preprocessing and sensor-level processing steps using a single command, do:</p>
+<p><code>mne_bids_pipeline --config=custom_config.py --steps=preprocessing,sensor</code></p>
 </section></section>
 <section>
 <section id="open-science-finding-and-sharing-analysis-code" class="title-slide slide level1 center">
@@ -1521,7 +1440,7 @@ graph LR
 <h2>Key Feature of Git: Timeline Control</h2>
 
 <img data-src="graph.png" class="r-stretch"></section>
-<section id="section-1" class="slide level2" data-background-image="Git-4yrs-up.png" data-background-size="cover">
+<section id="section-2" class="slide level2" data-background-image="Git-4yrs-up.png" data-background-size="cover">
 <h2></h2>
 <aside class="notes">
 <p><a href="https://youtu.be/1ffBJ4sVUb4?t=5460">Git-4yrs-up 1h 31m</a></p>
@@ -1598,9 +1517,50 @@ graph LR
       }</style></aside>
 </section></section>
 <section>
-<section id="data-science-skills-essential-to-machine-learning" class="title-slide slide level1 center">
-<h1>Data Science Skills Essential to Machine Learning</h1>
+<section id="data-science-skills-essential-to-statistical-computation-and-machine-learning" class="title-slide slide level1 center">
+<h1>Data Science Skills Essential to Statistical Computation and Machine Learning</h1>
 
+</section>
+<section id="statisical-models-data-visualizations" class="slide level2 smaller">
+<h2>Statisical models &amp; Data Visualizations</h2>
+<p>Representation of</p>
+</section>
+<section id="grammar-of-graphics" class="slide level2 smaller">
+<h2>Grammar of Graphics</h2>
+
+<img data-src="GofG_wilkinson.png" class="r-stretch"><p>Wilkinson, L. (1999). Statistical methods in psychology journals: Guidelines and explanations. American psychologist, 54(8), 594.</p>
+</section>
+<section id="grammar-of-graphics-1" class="slide level2 smaller">
+<h2>Grammar of Graphics</h2>
+<p><img data-src="gglayers.png"></p>
+<p><img data-src="layers_plots.png"></p>
+<p>Data: - your data, in tidy format, will provide ingredients for your plot - use <code>dplyr</code> techniques to prepare data for optimal plotting format - usually, this means you should have one row for every observation that you want to plot</p>
+<p>Aesthetics (aes), to make data visible - x, y: variable along the x and y axis - colour: color of geoms according to data - fill: the inside color of the geom - group: what group a geom belongs to - shape: the figure used to plot a point - linetype: the type of line used (solid, dashed, etc) - size: size scaling for an extra dimension - alpha: the transparency of the geom</p>
+<p>Geometric objects (geoms - determines the type of plot) geom_point(): scatterplot geom_line(): lines connecting points by increasing value of x geom_path(): lines connecting points in sequence of appearance geom_boxplot(): box and whiskers plot for categorical variables geom_bar(): bar charts for categorical x axis geom_histogram(): histogram for continuous x axis geom_violin(): distribution kernel of data dispersion geom_smooth(): function line based on data</p>
+<p>Facets facet_wrap() or facet_grid() for small multiples</p>
+<p>Statistics similar to geoms, but computed show means, counts, and other statistical summaries of data</p>
+<p>Coordinates - fitting data onto a page coord_cartesian to set limits coord_polar for circular plots coord_map for different map projections</p>
+<p>Themes overall visual defaults fonts, colors, shapes, outlines</p>
+<p>Let’s try it out! Here are the basic steps to build a plot. You can refer back to these steps throughout the workshop if you need help!</p>
+<p>Create a simple plot object: plot.object &lt;- ggplot() Add geometric layers: plot.object &lt;- plot.object + geom_<em>() Add appearance layers: plot.object &lt;- plot.object + coord_</em>() + theme() Repeat step 2-3 until satisfied, then print: plot.object or print(plot.object)</p>
+<p>https://r.qcbs.ca/workshop03/book-en/grammar-of-graphics-gg-basics.html</p>
+<aside class="notes">
+<p>GG refers to the Grammar of Graphics, a system for describing and building graphs. As in grammar of a language let’s use a sentence. A sentence is a combination of words that form a complete thought. Usually, a sentence has a verb and a subject, but you can also layer on adjectives, adverbs, and other parts of speech to make the sentence more complex. With each addition you can change and modify meaning.</p>
+<p>By analogy, in the same way that grammar is a system for describing a language, the Grammar of Graphics is a system for describing graphs. The ggplot2 package is a popular implementation of the Grammar of Graphics in R.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="data-transformation-manipulation" class="slide level2 smaller">
+<h2>Data Transformation &amp; Manipulation</h2>
 </section>
 <section id="spss-transformation-manipulation" class="slide level2 smaller">
 <h2>SPSS Transformation &amp; Manipulation</h2>
@@ -1725,10 +1685,10 @@ graph LR
 </div>
 </div>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb7" data-code-line-numbers="2|3-4"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb7-1"><a href="#cb7-1"></a>honeymoon_period_longer <span class="ot">&lt;-</span> honeymoon_period <span class="sc">%&gt;%</span> </span>
-<span id="cb7-2"><a href="#cb7-2"></a>  <span class="fu">pivot_longer</span>(<span class="at">cols =</span> <span class="fu">starts_with</span>(<span class="st">"Satisfaction_"</span>), </span>
-<span id="cb7-3"><a href="#cb7-3"></a>               <span class="at">names_to =</span> <span class="st">"Life_satisfaction"</span>, </span>
-<span id="cb7-4"><a href="#cb7-4"></a>               <span class="at">values_to =</span> <span class="st">"Time"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb1" data-code-line-numbers="2|3-4"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1"></a>honeymoon_period_longer <span class="ot">&lt;-</span> honeymoon_period <span class="sc">%&gt;%</span> </span>
+<span id="cb1-2"><a href="#cb1-2"></a>  <span class="fu">pivot_longer</span>(<span class="at">cols =</span> <span class="fu">starts_with</span>(<span class="st">"Satisfaction_"</span>), </span>
+<span id="cb1-3"><a href="#cb1-3"></a>               <span class="at">names_to =</span> <span class="st">"Life_satisfaction"</span>, </span>
+<span id="cb1-4"><a href="#cb1-4"></a>               <span class="at">values_to =</span> <span class="st">"Time"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <div class="cell">
 <div class="cell-output-display">
@@ -4509,32 +4469,61 @@ graph LR
 </section>
 <section id="tabular-data-frames-cognitive-load" class="slide level2 smaller">
 <h2>Tabular Data Frames &amp; Cognitive Load</h2>
-<blockquote>
-<p>Programming for humans not machines</p>
-<ul>
-<li>Hal Abelson</li>
-</ul>
-</blockquote>
+<p>Doing data manipulations with than 2 variables in a table can be cognitively taxing.</p>
 </section>
-<section id="section-2" class="slide level2">
+<section id="section-3" class="slide level2 smaller">
 <h2></h2>
-<blockquote>
-<p>Programming for humans not machines</p>
-<ul>
-<li>Hal Abelson</li>
-</ul>
-</blockquote>
-<div class="fragment">
+<div class="columns">
+<div class="column" style="width:14.2%;">
+<p><img data-src="fs.png"></p>
+</div><div class="column" style="width:14.2%;">
+<p><img data-src="readr.png"></p>
+</div><div class="column" style="width:14.20%;">
+<p><img data-src="tibble.png"></p>
+</div><div class="column" style="width:14.20%;">
+<p><img data-src="pipe.png"></p>
+</div><div class="column" style="width:14.20%;">
+<p><img data-src="dplyr.png"></p>
+</div><div class="column" style="width:14.20%;">
+<p><img data-src="knitr.png"></p>
+</div><div class="column" style="width:14.20%;">
+<p><img data-src="quarto.png"></p>
+</div>
+</div>
+<div class="columns">
+<div class="column" style="width:17%;">
+<p><img data-src="tidyverse.png"></p>
+</div><div class="column" style="width:71.5%;">
 <div class="cell">
-<div class="sourceCode cell-code" id="cb8"><pre class="sourceCode numberSource latex number-lines code-with-copy"><code class="sourceCode latex"><span id="cb8-1"><a href="#cb8-1"></a>                                          .---&gt; Communicate</span>
-<span id="cb8-2"><a href="#cb8-2"></a>read -&gt; wrangle ---.--&gt; transform ---+-- /</span>
-<span id="cb8-3"><a href="#cb8-3"></a>                   ^                 |            </span>
-<span id="cb8-4"><a href="#cb8-4"></a>                   |                 v</span>
-<span id="cb8-5"><a href="#cb8-5"></a>                   model &lt;-- visualize </span>
-<span id="cb8-6"><a href="#cb8-6"></a>                   </span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb2"><pre class="sourceCode numberSource latex number-lines code-with-copy"><code class="sourceCode latex"><span id="cb2-1"><a href="#cb2-1"></a>                                  </span>
+<span id="cb2-2"><a href="#cb2-2"></a>read -&gt; wrangle -+-&gt; transform -+----+--&gt;Communicate </span>
+<span id="cb2-3"><a href="#cb2-3"></a>                 ^              |   /</span>
+<span id="cb2-4"><a href="#cb2-4"></a>                 |              v  /</span>
+<span id="cb2-5"><a href="#cb2-5"></a>              model &lt;-- visualize_/</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<blockquote>
+<p>Programs must be written for humans to read, and only incidentally for computers to execute.<sup>1</sup></p>
+</blockquote>
 </div>
 </div>
-</section>
+<div class="columns">
+<div class="column" style="width:14.20%;">
+<p><img data-src="purrr.png"></p>
+</div><div class="column" style="width:14.20%;">
+<p><img data-src="stringr.png"></p>
+</div><div class="column" style="width:14.20%;">
+<p><img data-src="reticulate.png"></p>
+</div><div class="column" style="width:14.20%;">
+<p><img data-src="ggplot2.png"></p>
+</div><div class="column" style="width:14.20%;">
+<p><img data-src="tidyr.png"></p>
+</div><div class="column" style="width:14.20%;">
+<p><img data-src="rmarkdown.png"></p>
+</div><div class="column" style="width:14.20%;">
+<p><img data-src="shiny.png"></p>
+</div>
+</div>
+<aside><ol class="aside-footnotes"><li id="fn5"><p>Abelson, H., Sussman, G. J. 1985. Structure and Interpretation of Computer Programs. Cambridge, MA: MIT Press. p.xxiv</p></li></ol></aside></section>
 <section id="tidyverse-concepts" class="slide level2">
 <h2>Tidyverse Concepts</h2>
 
@@ -4694,6 +4683,15 @@ graph LR
 <p>Waseem, M., Das, T., Ahmad, A., Fehmideh, M., Liang, P., &amp; Mikkonen, T. (2023). Using ChatGPT throughout the Software Development Life Cycle by Novice Developers. arXiv preprint. https://doi.org/10.48550/arXiv.2310.13648</p>
 <p>White, J., Hays, S., Fu, Q., Spencer-Smith, J., &amp; Schmidt, D. C. (2023). Chatgpt prompt patterns for improving code quality, refactoring, requirements elicitation, and software design. arXiv preprint. https://doi.org/10.48550/arXiv.2303.07839</p>
 </div></aside></section>
+<section id="section-4" class="slide level2 center">
+<h2></h2>
+<p><img data-src="simple_answers.png"> XKCD<sup>1</sup></p>
+<p>Permanent link to this comic: https://xkcd.com/2730/ Image URL (for hotlinking/embedding): https://imgs.xkcd.com/comics/code_lifespan.png</p>
+<p>Permanent link to this comic: https://xkcd.com/1833/ Image URL (for hotlinking/embedding): https://imgs.xkcd.com/comics/code_quality_3.png</p>
+<p>Permanent link to this comic: https://xkcd.com/1597/ Image URL (for hotlinking/embedding): https://imgs.xkcd.com/comics/git.png</p>
+<p>Permanent link to this comic: https://xkcd.com/1831/ Image URL (for hotlinking/embedding): https://imgs.xkcd.com/comics/here_to_help.png</p>
+<p>Permanent link to this comic: https://xkcd.com/657/ Image URL (for hotlinking/embedding): https://imgs.xkcd.com/comics/movie_narrative_charts.png</p>
+<aside><ol class="aside-footnotes"><li id="fn6"><p><a href="https://xkcd.com/1289/">https://xkcd.com/1289/</a></p></li></ol></aside></section>
 <section id="datacamp-coursera-udemy-linkedin-learning" class="slide level2">
 <h2>DataCamp, Coursera, Udemy, LinkedIn Learning</h2>
 </section>
