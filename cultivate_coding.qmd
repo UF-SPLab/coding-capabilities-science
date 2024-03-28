@@ -53,7 +53,6 @@ library(tidyverse)
 -   *Share* with others so they can modify, repeat, reuse, and build on code
 :::
 
-------------------------------------------------------------------------
 
 ## Return on Investment for Code {.smaller}
 
@@ -66,7 +65,6 @@ library(tidyverse)
 | Utility of Scale                |                                     |
 | Searchability                   |                                     |
 
-------------------------------------------------------------------------
 
 ::: notes
 1.  GUI is more accessible to novices (provides hints and guidance to users), but CLI requires explicit commands and user knowledge.
@@ -122,7 +120,7 @@ CLI
 
 ## 
 
-![](https://imgs.xkcd.com/comics/python.png){.absolute top=5% right=20%} 
+![](https://imgs.xkcd.com/comics/python.png){.absolute height=100% top=0% right=10%} 
 
 XKCD^[<https://xkcd.com/353/>]
 

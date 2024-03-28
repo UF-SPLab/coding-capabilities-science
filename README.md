@@ -1,4 +1,4 @@
-# coding-capabilities-science
+# Scientific Coding
 
-[Pres](cultivate_coding.html)
+[Cultivate Coding Capabilities](cultivate_coding.html)
 
