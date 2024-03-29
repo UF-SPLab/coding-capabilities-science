@@ -5,6 +5,7 @@ author: "Ryan Mears"
 format: 
   revealjs:
     slide-number: true
+    numbers: true
     footnotes-hover: true
 editor: visual
 ---
@@ -1131,32 +1132,45 @@ A config file controls main pipeline parameters. CLI runs all (or part with an o
 
 ## Key Feature of Git: Timeline Control
 
-![](reachability-example.png)
-
 [Example from *Think Like (a) Git: A Guide for the Perplexed*](https://think-like-a-git.net/sections/graph-theory/reachability.html)
 
-::: notes
-You can think of this graph as a set of three parallel universes with time flowing from left to right, so that A is the beginning of recorded history. (The arrow represents the "follows" or "is subsequent to" relationship, so you might say that "B follows A".)
+:::{.fragment fragment-index=0}
+
+![](reachability-example.png){.absolute top="20%" left="0" height="450"}
+
+
+
+
+
+
+:::{.fragment fragment-index=1}
+
+![](reachability-exampleE.jpg){.absolute top="20%" left="0" height="450"}
+
+
+
+:::{.fragment fragment-index=2}
+
+![](reachability-exampleK.jpg){.absolute top="20%" left="0" height="450"}
+
+
+
+:::{.fragment fragment-index=3}
+
+![](reachability-exampleH.jpg){.absolute top="20%" left="0" height="450"}
+
 :::
 
-## Key Feature of Git: Timeline Control
-
-![](reachability-exampleE.jpg)
-
-## Key Feature of Git: Timeline Control
-
-![](reachability-exampleK.jpg)
-
-::: notes
--   If you start from E, the history you'll see is A, B, C, D, E.
 :::
 
-## Key Feature of Git: Timeline Control
+:::
 
-![](reachability-exampleH.jpg)
+:::
 
 ::: notes
--   If you start from K, the history you'll see is A, B, C, I, J, K. But the really important thing about this is that no matter which node you start with, some **parts of the graph will be unreachable** to you.
+- You can think of this graph as a set of three parallel universes with time flowing from left to right, so that A is the beginning of recorded history. (The arrow represents the "follows" or "is subsequent to" relationship, so you might say that "B follows A".)
+- If you start from E, the history you'll see is A, B, C, D, E.
+- If you start from K, the history you'll see is A, B, C, I, J, K. But the really important thing about this is that no matter which node you start with, some **parts of the graph will be unreachable** to you.
 
 *turn it around*: **Depending** on where you start, you can **reach parts** of the graph that you couldn't get to otherwise.
 :::
@@ -1651,17 +1665,48 @@ These tasks are all made easier by the structure of the data:
 [DataCamp: How to Learn Deep Learning in 2024 - A Complete Guide](https://www.datacamp.com/blog/how-to-learn-deep-learning)
 
 
-## Books, Online Courses, Tutorials {.smaller}
+## Online Courses, Tutorials, Free Books! {.smaller}
+
+
+::: columns
+::: {.column width="20%"}
+
+[![](r4ds-cover.jpg)](https://r4ds.hadley.nz/)
+
+:::
+::: {.column width="20%"}
+
+
+[![](modern-dive-cover.png)](https://moderndive.com/)
+:::
+
+::: {.column width="20%"}
+
+[![](hopr-cover.png)](https://rstudio-education.github.io/hopr/)
+
+:::
+::: {.column width="20%"}
+[![](p4da-cover.jpeg)](https://wesmckinney.com/book/)
+:::
+
+::: {.column width="20%"}
+
+[![](PDSH-cover.png)](https://jakevdp.github.io/PythonDataScienceHandbook/)
+:::
+:::
+
 
 ::: aside 
 
-- Grisham, W., Abrams, M., Babiec, W. E., Fairhall, A. L., Kass, R. E., Wallisch, P., & Olivo, R. (2021). Teaching Computation in Neuroscience: Notes on the 2019 Society for Neuroscience Professional Development Workshop on Teaching. Journal of undergraduate neuroscience education : JUNE : a publication of FUN, Faculty for Undergraduate Neuroscience, 19(2), A185–A191. <https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8437361>
+- Crump, M. J. C. (2020). Reproducible statistics for psychologists with R: Lab Tutorials. <https://doi.org/10.17605/OSF.IO/KBHGA>
 
-- Ismay, C., & Kim, A. Y. (2019). Statistical inference via data science: a ModernDive into R and the tidyverse. Chapman and Hall/CRC. <https://moderndive.com/>
+- Donoghue T, Voytek B, & Ellis S (2022). Course Materials for Data Science in Practice. Journal of Open Source Education, 5(51), 121. <https://doi.org/10.21105/jose.00121>
+
+- Grisham, W., Abrams, M., Babiec, W. E., Fairhall, A. L., Kass, R. E., Wallisch, P., & Olivo, R. (2021). Teaching Computation in Neuroscience: Notes on the 2019 Society for Neuroscience Professional Development Workshop on Teaching. Journal of undergraduate neuroscience education : JUNE : a publication of FUN, Faculty for Undergraduate Neuroscience, 19(2), A185–A191. <https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8437361>
 
 - Navarro, D. (2015). Learning statistics with R: A tutorial for psychology students and other beginners (version 0.6). University of New South Wales. <https://learningstatisticswithr.com/>
 
-- Donoghue T, Voytek B, & Ellis S (2022). Course Materials for Data Science in Practice. Journal of Open Source Education, 5(51), 121. <https://doi.org/10.21105/jose.00121>
+
 
 :::
 
@@ -1710,7 +1755,7 @@ Autocomplete suggestions
 
 - Kashefi, A., & Mukerji, T. (2023). ChatGPT for programming numerical methods. Journal of Machine Learning for Modeling and Computing, 4(2). <https://doi.org/10.1615/JMachLearnModelComput.2023048492>
 
-- Rahman, C. R., & Wong, L. (2023). How much can ChatGPT really help Computational Biologists in Programming?. arXiv preprint arXiv:2309.09126. <https://doi.org/10.48550/arXiv.2309.09126>
+- Kim, D., Kim, T., Kim, Y., Byun, Y. H., & Yun, T. S. (2024). A ChatGPT-MATLAB framework for numerical modeling in geotechnical engineering applications. Computers and Geotechnics, 169, 106237. <https://doi.org/10.1016/j.compgeo.2024.106237>
 
 - Sänger, M., De Mecquenem, N., Lewińska, K. E., Bountris, V., Lehmann, F., Leser, U., & Kosch, T. (2023). Large Language Models to the Rescue: Reducing the Complexity in Scientific Workflow Development Using ChatGPT. arXiv preprint arXiv:2311.01825. <https://doi.org/10.48550/arXiv.2311.01825>
 
@@ -1721,14 +1766,27 @@ Autocomplete suggestions
 
 
 
-## ChatGPT and Github Copilot {.smaller}
 
+## {.smaller background-image="chatGPT_bioinformatics_fig1a.png" background-size="45%" background-position="15% 2%" background-repeat="no-repeat"}
+
+
+::: columns
+::: {.column width="60%"}
+
+:::
+::: {.column width="40%"}
+
+![](chatGPT_bioinformatics_fig1b.png){.absolute top=10% right=15% width=20%}
+Rahman & Wong (2023)
+
+:::
+:::
 
 ::: aside
 
 - Gurdil, H., Soguksu, Y. B., Salihoglu, S., & Coskun, F. (2024). Integrating AI in Educational Measurement: ChatGPT's Efficacy in Item Response Theory Data Generation. arXiv preprint arXiv:2402.01731. <https://doi.org/10.48550/arXiv.2402.01731>
 
-- Kim, D., Kim, T., Kim, Y., Byun, Y. H., & Yun, T. S. (2024). A ChatGPT-MATLAB framework for numerical modeling in geotechnical engineering applications. Computers and Geotechnics, 169, 106237. <https://doi.org/10.1016/j.compgeo.2024.106237>
+- Rahman, C. R., & Wong, L. (2023). How much can ChatGPT really help Computational Biologists in Programming?. arXiv preprint arXiv:2309.09126. <https://doi.org/10.48550/arXiv.2309.09126>
 
 - Kosar, T., Ostojić, D., Liu, Y. D., & Mernik, M. (2024). Computer Science Education in ChatGPT Era: Experiences from an Experiment in a Programming Course for Novice Programmers. Mathematics, 12(5), 629. <https://doi.org/10.3390/math12050629>
 
