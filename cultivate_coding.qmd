@@ -54,23 +54,6 @@ library(tidyverse)
 :::
 
 
-## Return on Investment for Code {.smaller}
-
-| Advantages                      | Limitations                         |
-|---------------------------------|-------------------------------------|
-| Graphical Resource Independence | Explicit Command Requirement        |
-| High Customization              | Reduced Usability for Novices       |
-| High Composability              | Increased User Knowledge Dependence |
-| Integration & Modularity        |                                     |
-| Utility of Scale                |                                     |
-| Searchability                   |                                     |
-
-
-::: notes
-1.  GUI is more accessible to novices (provides hints and guidance to users), but CLI requires explicit commands and user knowledge.
-2.  
-:::
-
 ## Code Libraries & APIs {.smaller}
 
 -   **Code Libraries**: collections of pre-written code that can be used to perform tasks. Well designed code is reusable, modular, and efficient, and APIs are the interfaces that allow code libraries to be used.
@@ -117,6 +100,25 @@ CLI
 
 4.  **Efficiency for Experienced Users:** For users who are comfortable with command-line interfaces, CLIs can offer a more efficient way to interact with software. Operations that might require several clicks in a GUI can often be performed with a single command in a CLI.
 :::
+
+
+## Return on Investment for Code {.smaller}
+
+| Advantages                      | Limitations                         |
+|---------------------------------|-------------------------------------|
+| Graphical Resource Independence | Explicit Command Requirement        |
+| High Customization              | Reduced Usability for Novices       |
+| High Composability              | Increased User Knowledge Dependence |
+| Integration & Modularity        |                                     |
+| Utility of Scale                |                                     |
+| Searchability                   |                                     |
+
+
+::: notes
+1.  GUI is more accessible to novices (provides hints and guidance to users), but CLI requires explicit commands and user knowledge.
+2.  
+:::
+
 
 ## 
 
@@ -1171,7 +1173,7 @@ You can think of this graph as a set of three parallel universes with time flowi
 
 ## 
 
-![](https://imgs.xkcd.com/comics/git.png){.absolute top=10% right=40%}
+![](https://imgs.xkcd.com/comics/git.png){.absolute height=100% top=0% right=10%} 
 
  
  XKCD ^[<https://xkcd.com/1597/>]
@@ -1352,7 +1354,7 @@ By analogy, in the same way that grammar is a system for describing a language, 
 
 ## 
 
-![](https://imgs.xkcd.com/comics/change_in_slope.png){.absolute top=15% right=10%}
+![](https://imgs.xkcd.com/comics/change_in_slope.png){.absolute width=90% top=0% right=-5%} 
   
 XKCD ^[<https://xkcd.com/2701/>]
 
@@ -1680,28 +1682,64 @@ These tasks are all made easier by the structure of the data:
 
 ## ChatGPT and Github Copilot {.smaller}
 
+::: columns
+::: {.column width="30%"}
+
+[Setup VSCode](https://code.visualstudio.com/docs/copilot/overview)
+
+![](vscode_copilot.gif)
+:::
+::: {.column width="30%"}
+RStudio: Github Copilot
+
+![](copilot-rstudio.png)
+
+:::
+::: {.column width="33%"}
+[Setup RStudio](https://docs.posit.co/ide/user/ide/guide/tools/copilot.html)
+Autocomplete suggestions
+
+1. simple/specific comment 
+2. Copilot’s code suggestion 
+3. Status(waiting/received/none)
+
+:::
+:::
+
 ::: aside
 
-- Gurdil, H., Soguksu, Y. B., Salihoglu, S., & Coskun, F. (2024). Integrating AI in Educational Measurement: ChatGPT's Efficacy in Item Response Theory Data Generation. arXiv preprint arXiv:2402.01731. <https://doi.org/10.48550/arXiv.2402.01731>
-
 - Kashefi, A., & Mukerji, T. (2023). ChatGPT for programming numerical methods. Journal of Machine Learning for Modeling and Computing, 4(2). <https://doi.org/10.1615/JMachLearnModelComput.2023048492>
-
-- Kim, D., Kim, T., Kim, Y., Byun, Y. H., & Yun, T. S. (2024). A ChatGPT-MATLAB framework for numerical modeling in geotechnical engineering applications. Computers and Geotechnics, 169, 106237. <https://doi.org/10.1016/j.compgeo.2024.106237>
-
-- Kosar, T., Ostojić, D., Liu, Y. D., & Mernik, M. (2024). Computer Science Education in ChatGPT Era: Experiences from an Experiment in a Programming Course for Novice Programmers. Mathematics, 12(5), 629. <https://doi.org/10.3390/math12050629>
 
 - Rahman, C. R., & Wong, L. (2023). How much can ChatGPT really help Computational Biologists in Programming?. arXiv preprint arXiv:2309.09126. <https://doi.org/10.48550/arXiv.2309.09126>
 
 - Sänger, M., De Mecquenem, N., Lewińska, K. E., Bountris, V., Lehmann, F., Leser, U., & Kosch, T. (2023). Large Language Models to the Rescue: Reducing the Complexity in Scientific Workflow Development Using ChatGPT. arXiv preprint arXiv:2311.01825. <https://doi.org/10.48550/arXiv.2311.01825>
 
-- Shen, Y., Ai, X., Soosai Raj, A. G., Leo John, R. J., & Syamkumar, M. (2024, March). Implications of ChatGPT for Data Science Education. In Proceedings of the 55th ACM Technical Symposium on Computer Science Education, 1, 1230-1236. <https://doi.org/10.1145/3626252.3630874>
-
-- Silva, C. A. G. D., Ramos, F. N., de Moraes, R. V., & Santos, E. L. D. (2024). ChatGPT: Challenges and Benefits in Software Programming for Higher Education. Sustainability, 16(3), 1245. <https://doi.org/10.3390/su16031245>
-
 - Waseem, M., Das, T., Ahmad, A., Fehmideh, M., Liang, P., & Mikkonen, T. (2023). Using ChatGPT throughout the Software Development Life Cycle by Novice Developers. arXiv preprint. <https://doi.org/10.48550/arXiv.2310.13648>
 
 - White, J., Hays, S., Fu, Q., Spencer-Smith, J., & Schmidt, D. C. (2023). Chatgpt prompt patterns for improving code quality, refactoring, requirements elicitation, and software design. arXiv preprint. <https://doi.org/10.48550/arXiv.2303.07839>
 :::
+
+
+
+## ChatGPT and Github Copilot {.smaller}
+
+
+::: aside
+
+- Gurdil, H., Soguksu, Y. B., Salihoglu, S., & Coskun, F. (2024). Integrating AI in Educational Measurement: ChatGPT's Efficacy in Item Response Theory Data Generation. arXiv preprint arXiv:2402.01731. <https://doi.org/10.48550/arXiv.2402.01731>
+
+- Kim, D., Kim, T., Kim, Y., Byun, Y. H., & Yun, T. S. (2024). A ChatGPT-MATLAB framework for numerical modeling in geotechnical engineering applications. Computers and Geotechnics, 169, 106237. <https://doi.org/10.1016/j.compgeo.2024.106237>
+
+- Kosar, T., Ostojić, D., Liu, Y. D., & Mernik, M. (2024). Computer Science Education in ChatGPT Era: Experiences from an Experiment in a Programming Course for Novice Programmers. Mathematics, 12(5), 629. <https://doi.org/10.3390/math12050629>
+
+- Shen, Y., Ai, X., Soosai Raj, A. G., Leo John, R. J., & Syamkumar, M. (2024, March). Implications of ChatGPT for Data Science Education. In Proceedings of the 55th ACM Technical Symposium on Computer Science Education, 1, 1230-1236. <https://doi.org/10.1145/3626252.3630874>
+
+- Silva, C. A. G. D., Ramos, F. N., de Moraes, R. V., & Santos, E. L. D. (2024). ChatGPT: Challenges and Benefits in Software Programming for Higher Education. Sustainability, 16(3), 1245. <https://doi.org/10.3390/su16031245>
+
+
+:::
+
+
 
 
 ## ChatGPT Coding Prompts {.smaller}
@@ -1718,6 +1756,9 @@ These tasks are all made easier by the structure of the data:
 -   Code quality and testing
     -   Compare function speeds
     -   Write unit tests
+
+[![](datacamp_chatgpt_cheatsheet.png){height=100px}](https://www.datacamp.com/cheat-sheet/chatgpt-cheat-sheet-data-science)[link](https://www.datacamp.com/cheat-sheet/chatgpt-cheat-sheet-data-science)
+
 :::
 
 ::: {.column width="33%"}
